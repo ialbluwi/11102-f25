@@ -50,15 +50,17 @@ summary {
   }
 }
 
+/* --- Elegant Midnight Skin --- */
 :root {
-  --primary-color: #1e3a8a;            /* links, headings */
-  --secondary-color: #2563eb;          /* sidebar highlights */
-  --accent-color: #3b82f6;             /* buttons, badges */
-  --body-background-color: #ffffff;    /* main background */
-  --body-text-color: #1f2937;          /* main text */
-  --sidebar-background-color: #e0e7ff; /* sidebar background */
-  --sidebar-text-color: #1f2937;       /* sidebar text */
+  --primary-color: #0f172a;           /* dark navy for headings and links */
+  --secondary-color: #1e293b;         /* slightly lighter navy for sidebar highlights */
+  --accent-color: #3b82f6;            /* elegant blue for buttons, badges */
+  --body-background-color: #f8fafc;   /* very light gray background */
+  --body-text-color: #111827;         /* dark text for readability */
+  --sidebar-background-color: #e2e8f0; /* soft gray sidebar */
+  --sidebar-text-color: #111827;
   --link-color: var(--primary-color);
   --heading-color: var(--primary-color);
   --button-background-color: var(--accent-color);
+  --button-text-color: #ffffff;
 }
