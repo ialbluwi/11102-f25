@@ -23,7 +23,7 @@ exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
 # Theme settings
 remote_theme: just-the-docs/just-the-docs@v0.10.1
-color_scheme: light
+color_scheme: elegant_sunset
 search_enabled: true
 heading_anchors: true
 permalink: pretty
@@ -38,6 +38,13 @@ collections:
   modules:
   schedules:
   announcements:
+  modules_su_tue_thu:
+    output: false
+  modules_mo_we:
+    output: false
+
+
+
 # Default layouts for each collection type
 defaults:
   - scope:
@@ -78,3 +85,29 @@ liquid:
 
 sass:
   style: compressed
+
+callouts: 
+  warning: 
+    title: Warning 
+    color: red
+  note:
+    title: note
+    color: yellow
+  important:
+    title: important
+    color: blue
+  tip:
+    title: Tip 
+    color: green
+  example:
+    title: Example 
+    color: grey-dk
+
+logo: "/assets/images/sketch-long.png"
+
+enable_copy_code_button: false
+math: katex
+
+plugins:
+  - jekyll-last-modified-at
+footer_content: ""   # keep the default footer clean
