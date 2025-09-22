@@ -94,7 +94,7 @@ The following function checks if a given password is safe. It checks the number 
 {: .highlight-title }
 > 💡 **NOTE**
 >
-> The above code is not **_pythonic_**. Use your favorite GenAI tool to see examples of pythonic versions. Ask for the use of `any` in your prompt or for the use of **regulat expressions**. We did not cover these features, so don't worry about understanding every bit of detail.
+> The above code is not **_pythonic_**. Use your favorite GenAI tool to see examples of pythonic versions. Ask for the use of `any` in your prompt or for the use of **regular expressions**. We did not cover these features, so don't worry about understanding every bit of detail.
 
 
 ## Random Password Generation

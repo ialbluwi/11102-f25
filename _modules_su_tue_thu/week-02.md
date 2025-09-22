@@ -5,12 +5,12 @@ note: "⚠️ Note: Schedule below not yet updated for this semester"
 
 Oct 12
 : Conditionals 1
-  : [P4E.3]
+  : [P4E.3](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=43.16) (excluding 3.7)
 
 Oct 14
 : Conditionals 2
-  : [P4E.3]
+  : [P4E.3]()
 
 Oct 16
 : Functions 1
-  : [P4E.4]
+  : [P4E.4]()

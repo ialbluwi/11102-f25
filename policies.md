@@ -67,7 +67,7 @@ If you have a **_valid execuse_** preventing you from submitting the practice ex
 
 The practice exercises and self-assessment quizzes are meant to keep you on track. Therefore, you will receive the 0.5% points if you submit them before the beginning of the following week.
 
-- The practice exercises and self-assessment quizzes are always due by **8 AM on Sunday**.
+- The practice exercises and self-assessment quizzes are always due by **11:59 PM on Saturday**.
 - You can still receive credit if you submit up to 8 hours late. This is automatically done and does not require any special request.
 - You will **not** receive any credit for work submitted more than **_8 hours late_**.
 
