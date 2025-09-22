@@ -3,10 +3,13 @@ title: <b>Week 14</b> (AI)
 ---
 
 Jan 4
-: Intelligence and Learning
+: Text Classification (<i>problem decomposition</i>)
+    : Slides
 
 Jan 6
-: AI Application
+: Text Classification (<i>implementation</i>)
+    : Code
 
 Jan 8
-: AI Application
+: A Machine Learning Premier
+    : Slides

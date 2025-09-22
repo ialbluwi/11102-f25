@@ -3,10 +3,14 @@ title: <b>Week 8</b> (Testing & SE)
 ---
 
 Nov 23
-: Testing
+: Testing (Intro)
+    : [Video (Intro)](https://cs50.harvard.edu/python/weeks/5/)<br>
+      [Notes](https://cs50.harvard.edu/python/weeks/5/)<br>
 
 Nov 25
-: Testing
+: Testing (Practice)
+    : Code
 
 Nov 27
-: Software Engineering
+: A Software Engineering Primer
+    : Slides
