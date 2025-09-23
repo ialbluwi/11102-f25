@@ -1,14 +1,14 @@
 ---
-name: Mohammad Abu Snober
+name: Omimah Ismail
 role: Instructor
-email: m.abusnober@psut.edu.jo
-photo: staff/abusnober.png
+email: o.ismail@psut.edu.jo
+photo: tools/copilot-pink2.png
 ---
 <details class="jtd-accordion">
   <summary>Sections</summary>
   <ul>
-    <li><b>Section 2:</b> SuTuTh 8:00 AM - 9:00 AM @ <code>IT203</code></li>
-    <li><b>Section 3:</b> SuTuTh 9:00 AM - 10:00 AM @ <code>IT204</code></li>
+    <li><b>Section X:</b> SuTuTh 0:00 AM - 00:00 AM @ <code>ITXX</code></li>
+    <li><b>Section X:</b> SuTuTh 0:00 AM - 00:00 AM @ <code>ITXX</code></li>
   </ul>
 </details>
 

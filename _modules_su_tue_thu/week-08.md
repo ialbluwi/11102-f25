@@ -14,3 +14,6 @@ Nov 25
 Nov 27
 : A Software Engineering Primer
     : Slides
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

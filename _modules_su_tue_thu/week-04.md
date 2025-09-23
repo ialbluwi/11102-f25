@@ -1,15 +1,20 @@
 ---
-title: <b>Week 4</b> (Iteration + Strings)
+title: <b>Week 4</b> (Iteration)
 ---
 
 Oct 26
-: Iteration 3
-  : [TP.4](#)
+: Iteration (nested loops)
+  : [P4E.5](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=69.16)
+  <br>Code
 
 Oct 28
-: Iteration Practice
-  : [P4E.6](#)
+: Iteration (practice)
+  : [P4E.5](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=69.16)
+  <br>Code
 
 Oct 30
-: Strings
-  : [P4E.6](#)
+: Iteration (turtle graphics)
+  : Code
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

@@ -16,3 +16,6 @@ Dec 11
 : Data Representation 2
     : Memory<br>
       Text, Audio, and Images
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

@@ -35,7 +35,8 @@ author: Ibrahim Albluwi
     - Logic Error.
 
 ## Suggested Outline
-1. Introduce the meaning terminology 1-3.
+1. Introduce the meaning terminology 1-3.<br>
+   You can make use of the following website to show the difference between high and low level languages: [https://www.codeconvert.ai/python-to-assembly-converter](https://www.codeconvert.ai/python-to-assembly-converter) (the even/odd example down the page is good to use!)
 2. Present each of the tools we will use (relating them to the introduced terminology).
     - **Python**: The programming language we will use. We need to download the interpreter!
       (Downloading python automatically downloads the interpreter, a simple IDE, standard libraries, etc.)

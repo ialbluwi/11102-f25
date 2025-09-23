@@ -171,6 +171,7 @@ The above procedure is still not very secure. The problem is that SHA256 is a ve
 > The following video summarizes nicely how passwords should be stored:
 > [Studying With Alex: Password Storage Tier List](https://www.youtube.com/watch?v=qgpsIBLvrGY&ab_channel=StudyingWithAlex)
 
+<!--
 ## Exercises (REMOVE BEFORE PUBLISHING)
 
 1. Write test cases for function X
@@ -187,3 +188,5 @@ The above procedure is still not very secure. The problem is that SHA256 is a ve
 6. Something about prompting and generation using AI.
 7. Something about code reading.
 8. getpass ?
+
+-->

@@ -13,3 +13,6 @@ Jan 6
 Jan 8
 : A Machine Learning Premier
     : Slides
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

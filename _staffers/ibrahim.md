@@ -9,10 +9,7 @@ photo: staff/ialbluwi.png
 <details class="jtd-accordion">
   <summary>Sections</summary>
   <ul>
-    <li><a href="#section-1">Section 1</a></li>
-    <li><a href="#section-2">Section 2</a></li>
-    <li><a href="#section-3">Section 3</a></li>
-    <li><a href="#section-4">Section 4</a></li>
+    <li><b>Section 11:</b> MoWe 2:00 PM - 3:30 PM @ <code>IT203</code></li>
   </ul>
 </details>
 

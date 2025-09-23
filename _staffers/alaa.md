@@ -7,10 +7,8 @@ photo: staff/alaa.png
 <details class="jtd-accordion">
   <summary>Sections</summary>
   <ul>
-    <li><a href="#section-1">Section 1</a></li>
-    <li><a href="#section-2">Section 2</a></li>
-    <li><a href="#section-3">Section 3</a></li>
-    <li><a href="#section-4">Section 4</a></li>
+    <li><b>Section 6:</b> SuTuTh 1:00 PM - 2:00 PM @ <code>IT204</code></li>
+    <li><b>Section 12:</b> MoWe 11:00 AM - 12:30 PM @ <code>IT102</code></li>
   </ul>
 </details>
 

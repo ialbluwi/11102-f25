@@ -17,3 +17,6 @@ Dec 18
 : Public Key Cryptography
     : [Video 1](https://www.youtube.com/watch?v=GSIDS_lvRv4&ab_channel=Computerphile)<br>
       [Video 2](https://www.youtube.com/watch?v=_zyKvPvh808&ab_channel=PracticalNetworking)
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
