@@ -17,4 +17,4 @@ Oct 9
   : [PE4.2](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=31.16)
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/149073) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/149074)
