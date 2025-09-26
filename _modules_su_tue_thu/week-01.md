@@ -4,8 +4,8 @@ title: <b>Week 1</b> (Introduction)
 
 Oct 5
 : Course Introduction
-  : [slides](#)<br>
-    [**Policy Quiz**{:.label .label-red }](#)
+  : [[Slides](#)] [[Heavy Box Game](/11102-f25/assets/demos/boxes.html)]<br>
+    [**Policy Quiz**{:.label .label-red }](https://edstem.org/us/courses/87448/lessons/149072)
 
 Oct 7
 : Introduction to Python

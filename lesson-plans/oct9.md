@@ -5,8 +5,13 @@ nav_exclude: true
 author: Ibrahim Albluwi
 ---
 
-# **2.** Variables & Expressions
+# **3.** Variables & Expressions
 <span style="font-size: 0.8em; font-weight: normal; color: gray;">For October 9, 2025</span>
+
+{: .tip-title}
+> Note
+>
+> This outline is based on [P4E.2](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=31.16). The expectation is to cover the whole chapter in this lecture.
 
 ## Suggested Teaching Method
 - Use **interactive live coding** with the students. Don't use slides.
@@ -15,7 +20,9 @@ author: Ibrahim Albluwi
 
 ## Things To Cover 
 1. **Values have types** (e.g., `int`, `str`, `float`, etc.). 
-<br>You can check the type by typing `type(17.5)` or `type('hello')`.
+- You can check the type by typing `type(17.5)` or `type('hello')`.
+- Knowing the type is important as we will see in the future (e.g. `5` is not the same as `'5'`)
+
 2. **Variables**:
     - Assignment statements.<br>
     Assignment $$\neq$$ equality (e.g., `x = 1` is not the same as `1 = x`).
