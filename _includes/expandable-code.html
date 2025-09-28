@@ -10,20 +10,16 @@
 </button>
 </div>
 
-
-    <!-- Collapsible Content -->
     <div class="expandable-code-content" id="{{ unique_id }}-content">
         <div class="expandable-code-wrapper">
-            <!-- Copy Button -->
             <button class="expandable-copy-btn"
                     onclick="event.stopPropagation(); copyExpandableCode('{{ unique_id }}-block', this)">
                 Copy
             </button>
 
-            <!-- Code Block -->
             <div class="expandable-code-block" id="{{ unique_id }}-block">
                 {% if include.file %}
-                    {% capture code_content %}{% include {{ include.file }} %}{% endcapture %}
+                    {% capture code_content %}{% include {{ include.file}} %}{% endcapture %}
                 {% else %}
                     {% assign code_content = include.code %}
                 {% endif %}
@@ -35,3 +31,4 @@
         </div>
     </div>
 </div>
+

@@ -5,8 +5,12 @@ nav_exclude: true
 author: Ibrahim Albluwi
 ---
 
-# **2.** Conditionals 1
+# **4.** Conditionals 1
 <span style="font-size: 0.8em; font-weight: normal; color: gray;">For October 12, 2025</span>
+
+## Overview
+
+The goal of this lecture is for students to *see* the syntax and understand the semantics of basic `if` statements. The following lecture will be a series of exercises to ensure that thy understand and can use `if` statements well. Therefore, focus in this lecture on exposition and next lecture on deep understanding. 
 
 ## Suggested Teaching Method
 - Use interactive **live coding**. Alternate between the python `REPL` and writing programs in files depending on the number of lines.
@@ -17,7 +21,7 @@ author: Ibrahim Albluwi
     - `==`, `!=`, `<`, `>`, `<=`, `>=`.
     <br>Ignore `is` and `is not` for now.
     - `and`, `or`, `not`.
-    - Everything except the integer `0` and the float `0.0` is considered true (e.g., `17 and True`).
+    - Everything except that the integer `0` and the float `0.0` is considered true (e.g., `17 and True`).
 
 2. **Conditionals**.
     - Basic Syntax: <br>
@@ -49,6 +53,7 @@ author: Ibrahim Albluwi
     ```
     - `else`. Use a simple example.
     - `elif`. Use a simple example.
+
 3. **Others**.
     - Show basic nested statements (depending on time). The following lecture will have a lot of nesting.
     - Ignore catching exceptions.
@@ -60,3 +65,5 @@ author: Ibrahim Albluwi
     if (y / x) < 1 and x != 0:
         print('fraction')
     ```
+
+    

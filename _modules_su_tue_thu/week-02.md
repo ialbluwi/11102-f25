@@ -9,7 +9,7 @@ Oct 12
 
 Oct 14
 : Conditionals (practice)
-  : Notes
+  : [Notes](/11102-f25/lessons/conditionals/)<br>
 
 Oct 16
 : Functions 1

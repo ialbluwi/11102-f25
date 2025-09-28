@@ -127,6 +127,14 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
   <img src="assets/images/tools/edstem.png" alt="Edstem Logo" width="50"/>
   <div>
     <strong>EdStem</strong><br>
-    This is where you will ask questions, interact with your instructors and classmates, and solve the weekly exercises and self assessments. You will receive an email invitation to create an account and join the course. [<a href=''>Direct Link to Course</a>]
+    This is where you will ask questions, interact with your instructors and classmates, and solve the weekly exercises and self assessments. You will receive an email invitation to create an account and join the course. [<a href='https://edstem.org/us/courses/87448'>Direct Link to Course</a>]
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; gap: 1em; margin-bottom: 1.5em; margin-top: 1em;">
+  <img src="assets/images/tools/psut.png" alt="Edstem Logo" width="50"/>
+  <div>
+    <strong>E-Learning System</strong><br>
+    We will use this system for the midterm and final exams. Your instructor might also use this system for communicating things specific to your section, rather than the course as a whole.
   </div>
 </div>
