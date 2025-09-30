@@ -36,7 +36,7 @@ description: >-
   Both are exercises due at the end of every week, and both are meant for you to learn. I.e., they are not meant to test you. However:
   <ul>
     <li><b>Practice Exercises</b> are meant to give you a stronger understanding of the material. </li>
-    <li><b>Self-Assessments</b> are meant to help you learn by being concious about what you mastered and what you did not, so that you could address any issues promptly.</li>
+    <li><b>Self-Assessments</b> help you see which parts of the material you are still not comfortable with, so that you could address them in time.</li>
   </ul>
 
   Formal assessment of your skills will be in the two class quizzes, the midterm exam, and the final exam.

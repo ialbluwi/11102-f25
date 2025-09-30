@@ -7,8 +7,8 @@ photo: staff/abusnober.png
 <details class="jtd-accordion">
   <summary>Sections</summary>
   <ul>
-    <li><b>Section 2:</b> SuTuTh 8:00 AM - 9:00 AM @ <code>IT203</code></li>
-    <li><b>Section 3:</b> SuTuTh 9:00 AM - 10:00 AM @ <code>IT204</code></li>
+    <li><b>Section 7:</b> SuTuTh 2:00 PM -&nbsp; 3:00 PM @ <code>IT204</code></li>
+    <li><b>Section 8:</b> MoWe&nbsp;  9:30 AM - 11:00 AM @ <code>IT106</code></li>
   </ul>
 </details>
 

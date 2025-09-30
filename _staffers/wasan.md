@@ -7,8 +7,7 @@ photo: tools/copilot-pink2.png
 <details class="jtd-accordion">
   <summary>Sections</summary>
   <ul>
-    <li><b>Section X:</b> SuTuTh 0:00 AM - 00:00 AM @ <code>ITXX</code></li>
-    <li><b>Section X:</b> SuTuTh 0:00 AM - 00:00 AM @ <code>ITXX</code></li>
+    <li><b>Section 2:</b> SuTuTh 8:00 AM - 9:00 AM @ <code>IT203</code></li>
   </ul>
 </details>
 

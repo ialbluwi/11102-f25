@@ -7,7 +7,7 @@ photo: staff/baniamer.png
 <details class="jtd-accordion">
   <summary>Sections</summary>
   <ul>
-    <li><b>Section 1:</b> MoWe 8:00 AM - 9:30 AM @ <code>IT203</code></li>
+    <li><b>Section 1:</b> MoWe &nbsp;8:00 AM - &nbsp;9:30 AM @ <code>IT203</code></li>
     <li><b>Section 9:</b> MoWe 11:00 AM - 12:30 PM @ <code>IT203</code></li>
   </ul>
 </details>
