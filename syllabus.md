@@ -56,7 +56,7 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
 - Understand how to **_compare different algorithms_** for solving a problem.
 - Perform basic **_manipulations of images_** using Python.
 - Understand basic concepts in **_computer security_** like data integrity and confidentiality.
-- Understand basic concepts related **_machine learning and data analysis_**.
+- Understand basic concepts related to **_machine learning and data analysis_**.
 
 ## Assessments & Grades
 
