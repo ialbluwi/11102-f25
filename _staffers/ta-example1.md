@@ -1,6 +1,6 @@
 ---
-name: TA Example 1
+name: TA 1
 role: Teaching Assistant
-email: ta.test@psut.edu.jo
+email: TBA
 photo: tools/copilot-dark-green.png
 ---

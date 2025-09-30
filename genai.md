@@ -121,7 +121,7 @@ Here is what we will do:
     </thead>
     <tbody>
       <tr> <td>TBA </td>        
-           <td>Vibe code. </td>        
+           <td>TBA. </td>        
            </tr>
     </tbody>
   </table>

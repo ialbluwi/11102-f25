@@ -32,7 +32,7 @@ description: >-
 </details>
 
 <details class="jtd-accordion">
-  <summary>What is the difference between <b>Practice Exercises</b> and <b>Self-Assessments</b>>?</summary>
+  <summary>What is the difference between <b>Practice Exercises</b> and <b>Self-Assessments</b>?</summary>
   Both are exercises due at the end of every week, and both are meant for you to learn. I.e., they are not meant to test you. However:
   <ul>
     <li><b>Practice Exercises</b> are meant to give you a stronger understanding of the material. </li>
@@ -65,7 +65,7 @@ description: >-
 <div class="faq-page">
 <details class="jtd-accordion">
   <summary>Can I move to another section? </summary>
-  Yes, if you can do that officially throug the deanship of admission and registration. Otherwise, No (see the <a href="/11102-f25/policies">policies</a> page).
+  Yes, if you can do that officially through the deanship of admission and registration. Otherwise, No (see the <a href="/11102-f25/policies">policies</a> page).
 </details>
 
 <details class="jtd-accordion">

@@ -80,7 +80,7 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
            <td>Two quizzes done in class, each worth 5%.</td></tr>
       <tr> <td>Course Project</td>   
            <td>10%</td>       
-           <td>Due at the end of the semester and broken into parts that are due during the semester.</td></tr>
+           <td>Due at the end of the semester and broken into parts due during the semester.</td></tr>
       <tr> <td>Midterm Exam</td>     
            <td>30%</td>       
            <td>The exact date and time will be set by the university.</td></tr>
@@ -103,7 +103,7 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
 <img src="assets/images/tools/python.png" alt="Python Logo" width="50"/>
 <div>
   <strong>Python</strong><br>
-  We will learn programming in python! [<a href=''>download</a>]
+  We will learn programming in python! [<a href='https://www.python.org/downloads/'>download</a>]
 </div>
 </div>
 
@@ -111,7 +111,7 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
 <img src="assets/images/tools/vscode.png" alt="VSCode Logo" width="50"/>
 <div>
   <strong>VS Code</strong><br>
-  This is the IDE (Integrated Development Environment) you will use for programming in python. While you are allowed to use other IDEs, this is the one we will use in the classroom, base the course material on, and provide support for. [<a href=''>download</a>] [<a href=''>configure python</a>]
+  This is the IDE (Integrated Development Environment) you will use for programming in python. While you are allowed to use other IDEs, this is the one we will use in the classroom, base the course material on, and provide support for. [<a href='https://code.visualstudio.com/download'>download</a>] [<a href='https://marketplace.visualstudio.com/items?itemName=ms-python.python'>configure python</a>]
 </div>
 </div>
 
@@ -119,7 +119,7 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
 <img src="assets/images/tools/copilot.jpg" alt="Copilot Logo" width="50"/>
 <div>
   <strong>GitHub Copilot</strong><br>
-  This is a GenAI assistant for programming that we will use as a plugin in VSCode. [<a href=''>install</a>]
+  This is a GenAI assistant for programming that we will use as a plugin in VSCode. [<a href='https://marketplace.visualstudio.com/items?itemName=GitHub.copilot'>install</a>]
 </div>
 </div>
 
