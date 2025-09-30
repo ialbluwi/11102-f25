@@ -1,11 +1,14 @@
 ---
-title: Week 7
+title: <b>Week 7</b> (Files + Dictionaries)
 ---
 
 Nov 17
-: [Java & Git](#)
-  : [1.1](#)
+: TBA
+  : TBA
 
 Nov 19
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

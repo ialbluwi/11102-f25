@@ -1,11 +1,14 @@
 ---
-title: Week 10
+title: <b>Week 10</b> (Data Representation)
 ---
 
 Dec 8
-: [Java & Git](#)
-  : [1.1](#)
+: TBA
+  : TBA
 
 Dec 10
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

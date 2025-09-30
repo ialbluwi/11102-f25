@@ -1,11 +1,14 @@
 ---
-title: Week 4
+title: <b>Week 4</b> (Iteration)
 ---
 
 Oct 27
-: [Java & Git](#)
-  : [1.1](#)
+: TBA
+  : TBA
 
 Oct 29
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

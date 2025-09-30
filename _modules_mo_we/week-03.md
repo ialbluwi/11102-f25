@@ -1,11 +1,14 @@
 ---
-title: Week 3
+title: <b>Week 3</b> (Functions + Iteration)
 ---
 
 Oct 20
-: [Java & Git](#)
-  : [1.1](#)
+: TBA
+  : TBA
 
 Oct 22
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

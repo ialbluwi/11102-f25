@@ -1,11 +1,14 @@
 ---
-title: Week 6
+title: <b>Week 6</b> (Lists)
 ---
 
 Nov 10
-: [Java & Git](#)
-  : [1.1](#)
+: TBA
+  : TBA
 
 Nov 12
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

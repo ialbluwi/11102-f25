@@ -1,11 +1,14 @@
 ---
-title: Week 11
+title: <b>Week 11</b> (Security)
 ---
 
 Dec 15
-: [Java & Git](#)
-  : [1.1](#)
+: TBA
+  : TBA
 
 Dec 17
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

@@ -1,11 +1,14 @@
 ---
-title: Week 5
+title: <b>Week 5</b> (Strings + Lists)
 ---
 
 Nov 3
-: [Java & Git](#)
-  : [1.1](#)
+: TBA + [**Quiz # 1**{:.label .label-red }](#)
+  : TBA
 
 Nov 5
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

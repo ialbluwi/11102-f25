@@ -1,11 +1,14 @@
 ---
-title: Week 9
+title: <b>Week 9</b> (Midterms + Algorithms)
 ---
 
 Dec 1
-: [Java & Git](#)
-  : [1.1](#)
+: TBA
+  : TBA
 
 Dec 3
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

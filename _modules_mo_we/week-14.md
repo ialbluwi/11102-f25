@@ -1,11 +1,14 @@
 ---
-title: Week 14
+title: <b>Week 14</b> (AI)
 ---
 
 Jan 5
-: [Java & Git](#)
-  : [1.1](#)
+: TBA
+  : TBA
 
 Jan 7
-: **Section**{: .label .label-purple }[Intro to Java](#)
-  : [Solution](#)
+: TBA
+  : TBA
+
+HW
+: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
