@@ -37,12 +37,12 @@ You are expected to attend the section you are officially signed up for. That is
 
 ## Missing the Midterm Exam
 
-You are entitled to a make-up exam if you miss the midterm exam provided that:
-- You provide a valid execuse.
+You are entitled to a make-up exam if you miss the midterm exam, provided that:
+- You provide a valid excuse.
 - You inform your instructor **_within 3 days_** of the exam or the date of your medical report.
 
 {: .important-title }
-> Valid Execuses
+> Valid Excuses
 >
 > According to university regulations, a valid excuse is a medical report from a doctor (approved by the the university's medical center) or a note from a Dean justifying your absence.
 
@@ -53,7 +53,7 @@ If you miss the final exam, you need to request a make-up exam and provide a val
 ## Missing a Quiz
 
 There will be a single make-up quiz during the last week of the semester for those who miss Quiz 1 and/or Quiz 2.
-- To sit for this quiz, you need to get your instructor's approval (who might request a valid execuse).
+- To sit for this quiz, you need to get your instructor's approval (who might request a valid excuse).
 - If you miss two quizzes, the make-up quiz will be worth 10%. If you miss one quiz, the make-up quiz will be worth 5%.
 
 > If you know ahead of time that you will not be able to attend a quiz with your section, or if you miss the quiz due to an emergency, reach out to your instructor as soon as possible to see if you can be rescheduled to attend the quiz with another section.
@@ -61,7 +61,7 @@ There will be a single make-up quiz during the last week of the semester for tho
 
 ## Missing Other Coursework
 
-If you have a **_valid execuse_** preventing you from submitting the practice exercises or self-assessment quiz for a certain week, reach out to your instructor and ask for the quiz or exercises to be rescheduled for the following week.
+If you have a **_valid excuse_** preventing you from submitting the practice exercises or self-assessment quiz for a certain week, reach out to your instructor and ask for the quiz or exercises to be rescheduled for the following week.
 
 ## Late Submissions
 
@@ -76,7 +76,7 @@ The practice exercises and self-assessment quizzes are meant to keep you on trac
 
 ## Collaboration & Generative AI Use
 
-You are allowed to interact with your colleagues and use Generative AI while solving the practice exercises and self-assessment quizzes (provided that you avoid plain plagiarism, as explained below). However, you are expected to exercise good judgement regarding when and how to collaborate and/or use GenAI. Your goal should be to learn and check your learning, not just to get the work done. Otherwise, you won't do well in the proctored GenAI-free assessments.
+You are allowed to interact with your colleagues and use Generative AI while solving the practice exercises and self-assessment quizzes (provided that you avoid plain plagiarism, as explained below). However, you are expected to exercise good judgment regarding when and how to collaborate and/or use GenAI. Your goal should be to learn and check your learning, not just to get the work done. Otherwise, you won't do well in the proctored GenAI-free assessments.
 
 > Check the [Programming with GenAI page](/11102-f25/genai/#what-is-unhealthy-use-of-genai) for examples of healthy and unhealthy use of GenAI.
 {: .tip }
@@ -89,3 +89,4 @@ You are allowed to interact with your colleagues and use Generative AI while sol
 
 > According to the university regulations, the penalty for plagiarism is **_at least_** an F in the course.
 {: .warning }
+

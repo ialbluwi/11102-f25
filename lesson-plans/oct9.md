@@ -15,7 +15,7 @@ author: Ibrahim Albluwi
 
 ## Suggested Teaching Method
 - Use **interactive live coding** with the students. Don't use slides.
-- Rely mostly on the python `REPL` instead of writing the program in a file, and then clicking on run. This is more efficient.
+- Rely mostly on the Python `REPL` instead of writing the program in a file, and then clicking on run. This is more efficient.
 - You can summarize using very short bullet points on the side of the board, so that students can keep track of what was covered.
 
 ## Things To Cover 

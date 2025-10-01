@@ -22,7 +22,7 @@ seo:
 
 ## Course Overview
 
-Welcome! This course is a gentle (and hopefully fun) introduction to computing. We will use programming in Python as a vehicle for introducing some fundamentals of the field. As you learn how to program, you will develop skills that you need in your future courses and also explore applicatoins in various computing areas, such as artificial intelligence, computer security, and image processing. You will also begin to appreciate what it takes to design and build large software systems. In short, this course will give you a taste of computing and prepare you for what lies ahead.
+Welcome! This course is a gentle (and hopefully fun) introduction to computing. We will use programming in Python as a vehicle for introducing some fundamentals of the field. As you learn how to program, you will develop skills that you need in your future courses and also explore applications in various computing areas, such as artificial intelligence, computer security, and image processing. You will also begin to appreciate what it takes to design and build large software systems. In short, this course will give you a taste of computing and prepare you for what lies ahead.
 
 ## Prerequisites
 
@@ -70,16 +70,16 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
     <tbody>
       <tr> <td>Exercises</td>        
            <td>5%</td>        
-           <td>12 problemsets due at the end of every week. You are allowed to drop the lowest 2.</td>
+           <td>12 problem sets due at the end of every week. You are allowed to drop the lowest 2.</td>
            </tr>
       <tr> <td>Self Assessments</td> 
            <td>5%</td>        
            <td>12 quizzes for self assessment purposes done at home and due at the end of every week. You are allowed to drop the lowest 2.</td></tr>
       <tr> <td>Quizzes</td>          
-           <td>10%</td>        
-           <td>Two quizzes done in class, each worth 5%.</td></tr>
-      <tr> <td>Course Project</td>   
-           <td>10%</td>       
+           <td>12%</td>        
+           <td>Two quizzes done in class, each worth 6%.</td></tr>
+      <tr> <td>Assignments</td>   
+           <td>8%</td>       
            <td>Due at the end of the semester and broken into parts due during the semester.</td></tr>
       <tr> <td>Midterm Exam</td>     
            <td>30%</td>       
@@ -111,7 +111,7 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
 <img src="assets/images/tools/vscode.png" alt="VSCode Logo" width="50"/>
 <div>
   <strong>VS Code</strong><br>
-  This is the IDE (Integrated Development Environment) you will use for programming in python. While you are allowed to use other IDEs, this is the one we will use in the classroom, base the course material on, and provide support for. [<a href='https://code.visualstudio.com/download'>download</a>] [<a href='https://marketplace.visualstudio.com/items?itemName=ms-python.python'>configure python</a>]
+  This is the IDE (Integrated Development Environment) you will use for programming in Python. While you are allowed to use other IDEs, this is the one we will use in the classroom, base the course material on, and provide support for. [<a href='https://code.visualstudio.com/download'>download</a>] [<a href='https://marketplace.visualstudio.com/items?itemName=ms-python.python'>configure python</a>]
 </div>
 </div>
 
@@ -127,7 +127,7 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
   <img src="assets/images/tools/edstem.png" alt="Edstem Logo" width="50"/>
   <div>
     <strong>EdStem</strong><br>
-    This is where you will ask questions, interact with your instructors and classmates, and solve the weekly exercises and self assessments. You will receive an email invitation to create an account and join the course. [<a href='https://edstem.org/us/courses/87448'>Direct Link to Course</a>]
+    This is where you will ask questions, interact with your instructors and classmates, and solve the weekly exercises and self-assessments. You will receive an email invitation to create an account and join the course. [<a href='https://edstem.org/us/courses/87448'>Direct Link to Course</a>]
   </div>
 </div>
 

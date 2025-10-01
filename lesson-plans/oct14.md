@@ -29,7 +29,7 @@ else:
     print("OK!")
 ```
 
-Live-code this exercise, or any other similar `if-elif-else` example of your choice (in 5 minutes) just to remind students about the syntax of `if`, `else`, and `elif`, and about the importance of indentation.
+Live-code this exercise, or any other similar `if-elif-else` example of your choice (in 5 minutes), just to remind students about the syntax of `if`, `else`, and `elif`, and about the importance of indentation.
 
 ## Exercise 1
 
@@ -39,7 +39,7 @@ Present the following slide on the screen. Ask students to spend ~4 minutes in p
 [PDF Version](/11102-f25/lesson-plans/images/conditionals.pdf)<br>
 [PDF Version (with notes)](/11102-f25/lesson-plans/images/conditionals-notes.pdf)
 
-Discuss the bugs in the upper two versions and the style issue in the fourth one (the unnecassary use of the `and` clause).
+Discuss the bugs in the upper two versions and the style issue in the fourth one (the unnecessary use of the `and` clause).
 
 ## Exercise 2
 
@@ -59,7 +59,7 @@ This code will never print <code>Warm</code>. To fix it, we need to swap the fir
 
 ## Exercise 3
 
-Write a program that reads three integers and prints the maximum. The goal of this exercise is for students to see multiple ways for solving the same problem. Give students a few minutes to think. Ask them to pull out a piece of paper and to try and write the code.
+Write a program that reads three integers and prints the maximum. The goal of this exercise is for students to see multiple ways to solve the same problem. Give students a few minutes to think. Ask them to pull out a piece of paper and to try to write the code.
 
 {% include expandable-code.html
 title="Solution 1"

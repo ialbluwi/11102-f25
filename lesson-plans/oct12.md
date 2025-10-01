@@ -10,10 +10,10 @@ author: Ibrahim Albluwi
 
 ## Overview
 
-The goal of this lecture is for students to *see* the syntax and understand the semantics of basic `if` statements. The following lecture will be a series of exercises to ensure that thy understand and can use `if` statements well. Therefore, focus in this lecture on exposition and next lecture on deep understanding. 
+The goal of this lecture is for students to *see* the syntax and understand the semantics of basic `if` statements. The following lecture will be a series of exercises to ensure that they understand and can use `if` statements well. Therefore, focus in this lecture on exposition and next lecture on deep understanding. 
 
 ## Suggested Teaching Method
-- Use interactive **live coding**. Alternate between the python `REPL` and writing programs in files depending on the number of lines.
+- Use interactive **live coding**. Alternate between the Python `REPL` and writing programs in files depending on the number of lines.
 - Use **predict-run-explain** instead of **explain-then-show**. I.e., show the code, ask them to predict the output, run the code, and then discuss why the output is what it is. There is empirical evidence showing that this is better than explaining something then demonstrating it. However, use wise judgement (depending on the example and the time available) for when to use what.
 
 ## Things To Cover 

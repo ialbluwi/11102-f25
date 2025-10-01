@@ -35,7 +35,7 @@ different possible passwords made of 6 lowercase letters. This might sound safe.
 
 Imagine if the password database of Omar's website was leaked and Ahmad had access to it ([this could happen even with top websites!](https://www.mcafee.com/blogs/internet-security/26-billion-records-released-the-mother-of-all-breaches/)). Typically, websites store passwords **encrypted**. Hence, Omar's password should still be unreadable by Ahmad. However, Ahmad now has an easy way to crack Omar's password!
 
-Knowing Omar's encrypted password, Ahmad can try to encrypt the `308,915,776` possible passwords and see if any matches Omar's encrypted password. This can be done on a laptop in a matter of hours, and on a stronger computer with multiple GPUs in a matter of seconds or less!
+Knowing Omar's encrypted password, Ahmad can try to encrypt the `308,915,776` possible passwords and see if any match Omar's encrypted password. This can be done on a laptop in a matter of hours, and on a stronger computer with multiple GPUs in a matter of seconds or less!
 
 Most websites currently require passwords to be at least 8 characters long, and to contain a combination of uppercase letters, lowercase letters, numbers, and special characters. How secure does this make the password? 
 
@@ -71,7 +71,7 @@ Are there other factors (beside the number and type of characters used) that can
 {: .important-title }
 > 📖 Definitions
 >
-> **A Dictionary Attack** is an attempt to guess the password based on a predefined list of strings. The list can contain English words (hence the name _dictionary_), common strings found in passwords, or actual passwords collected from previous breaches. The attacker typically uses a software to create variations of the strings in the dictionary (e.g., appending a number or a special character).
+> **A Dictionary Attack** is an attempt to guess the password based on a predefined list of strings. The list can contain English words (hence the name _dictionary_), common strings found in passwords, or actual passwords collected from previous breaches. The attacker typically uses software to create variations of the strings in the dictionary (e.g., appending a number or a special character).
 >
 > **A Rainbow Table** is a dictionary, where the strings (e.g., the common passwords) are not stored in plaintext, but are stored after being encrypted using one of the encryption methods commonly used for passwords. This can speed up the dictionary attack, as the the attacker only has to search for the encrypted string, instead of encrypting it before searching.
 
@@ -121,7 +121,7 @@ You will practice in the exercises creating variants of this program that make t
 {: .highlight-title }
 > 💡 **INFO**
 >
-> This idea is often referred to as `xkcd` password generation, as it is inspired by a famous [xkcd cartoon](https://xkcd.com/936/). There is even a python library named `xkcdpass` that you can install and import to generate passwords this way! (don't be afraid to read the [documentation](https://pypi.org/project/xkcdpass/)!)
+> This idea is often referred to as `xkcd` password generation, as it is inspired by a famous [xkcd cartoon](https://xkcd.com/936/). There is even a Python library named `xkcdpass` that you can install and import to generate passwords this way! (don't be afraid to read the [documentation](https://pypi.org/project/xkcdpass/)!)
 
 
 ## Storing Passwords
@@ -130,9 +130,9 @@ As we have mentioned above, no sane application stores its users' passwords in p
 
 How can the application authorize users if they don't know their passwords?
 
-The answer is easy. If the application stores an encrypted version of the password at signup, when the user requests to login using a password, this password is encrypted and compared to the encrypted one stored before.
+The answer is easy. If the application stores an encrypted version of the password at signup, when the user requests to log in using a password, this password is encrypted and compared to the encrypted one stored before.
 
-For this procedure to be secure, a **one-way** encryption method must be used. I.e., given the password, it should be easy to know its encrypted version. However, given the encrypted version, there should be no practical way for knowing the original password. This is often referred to as **hashing**.
+For this procedure to be secure, a **one-way** encryption method must be used. I.e., given the password, it should be easy to know its encrypted version. However, given the encrypted version, there should be no practical way to know the original password. This is often referred to as **hashing**.
 
 {: .important-title }
 > 📖 Definition
@@ -140,7 +140,7 @@ For this procedure to be secure, a **one-way** encryption method must be used. I
 > **A Cryptographic Hash Function** $$f(p)$$ is a function that receives a string (e.g., a password) and returns a new string, with the following conditions:
 > 1. $$f(p)$$ always returns the same string if $$p$$ did not change.
 > 2. If $$p$$ changes, then $$f(p)$$ must change with extremely high probability.
-> 3. Given $$f(p)$$ there should be no practical way for knowing the value of $$p$$.
+> 3. Given $$f(p)$$ there should be no practical way to know the value of $$p$$.
 > 4. Finding $$p_1 \neq p_2$$ such that $$f(p_1) = f(p_2)$$ should be practically impossible.
 
 The following code snippet shows how to use the [`hashlib`](https://docs.python.org/3/library/hashlib.html) library to generate a _hashed_ version of a password. This piece of code uses a hash function named SHA256.
@@ -152,7 +152,7 @@ The following code snippet shows how to use the [`hashlib`](https://docs.python.
    file='code/hashlib_example.py'
 %}
 
-While storing the hashed version of a password is good, it is still not very secure. The reason is that by looking at a leaked file of hashed passwords one can tell which users have the same password. This means that compromising one account leads to compromising all the other accounts using the same password. For this reason, applications typically add a **salt** to every password before hashing it. A salt is an extra random string (different for different users) added to the password before hashing it and stored alongside the password (often in plaintext). This way, if two users use the same password, their hashes will look different, because their salts are different.
+While storing the hashed version of a password is good, it is still not very secure. The reason is that by looking at a leaked file of hashed passwords, one can tell which users have the same password. This means that compromising one account leads to compromising all the other accounts using the same password. For this reason, applications typically add a **salt** to every password before hashing it. A salt is an extra random string (different for different users) added to the password before hashing it and stored alongside the password (often in plaintext). This way, if two users use the same password, their hashes will look different, because their salts are different.
 
 The following program shows how salting can be used.
 
@@ -163,7 +163,7 @@ The following program shows how salting can be used.
    file='code/salt.py'
 %}
 
-The above procedure is still not very secure. The problem is that SHA256 is a very fast hashing function. While this might sound good, it is bad for security reasons. A slow hash function makes the job of a hacker harder, because the time needed for a bruteforce attack does not only depend on how many passwords will be tested, but also how long it takes to test a single password! Therefore, it advisable to use libraries like [`bcrypt`](https://pypi.org/project/bcrypt/) and [`scrypt`](https://pypi.org/project/scrypt/), which provide slow (i.e., more secure) hashing algorithms.
+The above procedure is still not very secure. The problem is that SHA256 is a very fast hashing function. While this might sound good, it is bad for security reasons. A slow hash function makes the job of a hacker harder, because the time needed for a brute-force attack not only depends on how many passwords will be tested, but also how long it takes to test a single password! Therefore, it is advisable to use libraries like [`bcrypt`](https://pypi.org/project/bcrypt/) and [`scrypt`](https://pypi.org/project/scrypt/), which provide slow (i.e., more secure) hashing algorithms.
 
 {: .highlight-title }
 > 🔗 **LINK**
@@ -171,22 +171,4 @@ The above procedure is still not very secure. The problem is that SHA256 is a ve
 > The following video summarizes nicely how passwords should be stored:
 > [Studying With Alex: Password Storage Tier List](https://www.youtube.com/watch?v=qgpsIBLvrGY&ab_channel=StudyingWithAlex)
 
-<!--
-## Exercises (REMOVE BEFORE PUBLISHING)
 
-1. Write test cases for function X
-2. Implement a dictionary attack that does a minor variation to the words in the dictionary.
-3. Write a python program that generates a random password by concatenating 5 words from a dictionary.
-    - They should be unique
-4. Modify the xkcd program:
-    - Capitalize every word
-    - Add random special_chars or numbers between words
-    - Guarantee uniqueness
-    - length of words >= 3
-    - min_number of words used, max_number of words used
-5. Write a user-login manager? https://www.youtube.com/watch?v=MYYWnRDP8Q0&ab_channel=WJPearce
-6. Something about prompting and generation using AI.
-7. Something about code reading.
-8. getpass ?
-
--->
