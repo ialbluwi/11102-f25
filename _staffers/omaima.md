@@ -15,7 +15,7 @@ photo: tools/copilot-pink2.png
 <details class="jtd-accordion">
   <summary>Office Hours</summary>
   <ul>
-    <li>SuTuTh: xx - xx</li>
-    <li>MoWe: xx - xx</li>
+    <li><b>SuTuTh</b>: 11:00 AM - 12:00 PM</li>
+    <li><b>MoWe</b>: 11:30 - 12:30</li>
   </ul>
 </details>
