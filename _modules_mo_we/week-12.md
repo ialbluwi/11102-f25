@@ -9,6 +9,3 @@ Dec 22
 Dec 24
 : TBA
   : TBA
-
-HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

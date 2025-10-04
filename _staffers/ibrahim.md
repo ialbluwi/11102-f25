@@ -16,7 +16,7 @@ photo: staff/ialbluwi.png
 <details class="jtd-accordion">
   <summary>Office Hours</summary>
   <ul>
-    <li>SuTuTh: xx - xx</li>
-    <li>MoWe: xx - xx</li>
+    <li>SuTuTh: 1 PM - 2 PM - xx</li>
+    <li>MoWe: 12:30 PM - 2 PM</li>
   </ul>
 </details>

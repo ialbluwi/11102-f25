@@ -13,6 +13,3 @@ Dec 2
 Dec 4
 : Counting Operations
     : Code
-
-HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

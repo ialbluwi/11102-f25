@@ -14,5 +14,3 @@ Dec 25
   WINTER BREAK
 </span>
 
-HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

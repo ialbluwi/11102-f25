@@ -70,17 +70,17 @@ The first 7 weeks of the semester will focus on programming in Python. Each of t
     <tbody>
       <tr> <td>Exercises</td>        
            <td>5%</td>        
-           <td>12 problem sets due at the end of every week. You are allowed to drop the lowest 2.</td>
+           <td>11 problem sets due at the end of every week. The lowest is automatically dropped.</td>
            </tr>
       <tr> <td>Self Assessments</td> 
            <td>5%</td>        
-           <td>12 quizzes for self assessment purposes done at home and due at the end of every week. You are allowed to drop the lowest 2.</td></tr>
+           <td>11 quizzes for self assessment purposes done at home and due at the end of every week. The lowest is automatically dropped.</td></tr>
       <tr> <td>Quizzes</td>          
            <td>12%</td>        
            <td>Two quizzes done in class, each worth 6%.</td></tr>
       <tr> <td>Assignments</td>   
            <td>8%</td>       
-           <td>Due at the end of the semester and broken into parts due during the semester.</td></tr>
+           <td>Details will be posted on the <a href='/11102-f25/assignments'>Assignments</a> page.</td></tr>
       <tr> <td>Midterm Exam</td>     
            <td>30%</td>       
            <td>The exact date and time will be set by the university.</td></tr>
