@@ -2,7 +2,7 @@
 name: Omimah Ismail
 role: Instructor
 email: o.ismail@psut.edu.jo
-photo: tools/copilot-pink2.png
+photo: staff/omaima.png
 ---
 <details class="jtd-accordion">
   <summary>Sections</summary>
