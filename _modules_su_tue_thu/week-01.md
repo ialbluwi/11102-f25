@@ -9,7 +9,8 @@ Oct 5
 
 Oct 7
 : Introduction to Python
-  : [P4E.1](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=13.16)<br> 
+  : [P4E.1](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=13.16)<br>
+    [Terminology](/11102-f25/lessons/basics)<br>
     Install: [python](https://www.python.org/downloads/), [vscode](https://code.visualstudio.com/download), [python for vscode](https://marketplace.visualstudio.com/items?itemName=ms-python.python), [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 
 Oct 9
