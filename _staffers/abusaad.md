@@ -1,6 +1,5 @@
 ---
-name: TA 2
+name: Abd-Alrahman Abusaad
 role: Teaching Assistant
-email: TBA
 photo: tools/copilot-dark-green.png
 ---
