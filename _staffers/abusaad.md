@@ -1,5 +1,6 @@
 ---
 name: Abd-Alrahman Abusaad
 role: Teaching Assistant
-photo: tools/copilot-dark-green.png
+website: https://www.linkedin.com/in/abd-alrahman-abusaad/
+photo: staff/abusaad.png
 ---

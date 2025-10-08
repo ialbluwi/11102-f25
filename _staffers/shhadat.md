@@ -1,5 +1,6 @@
 ---
 name: Abdallah Shhadat
 role: Teaching Assistant
-photo: tools/copilot-dark-green.png
+website: https://www.linkedin.com/in/abdallahshhadat/
+photo: staff/shhadat.png
 ---
