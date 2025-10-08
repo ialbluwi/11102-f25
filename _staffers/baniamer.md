@@ -16,7 +16,7 @@ photo: staff/baniamer.png
 <details class="jtd-accordion">
   <summary>Office Hours</summary>
   <ul>
-    <li>SuTuTh: xx - xx</li>
-    <li>MoWe: xx - xx</li>
+    <li>SuTuTh: 10:00 AM - 11:00 AM</li>
+    <li>MoWe: 9:30 AM - 11:30 AM</li>
   </ul>
 </details>
