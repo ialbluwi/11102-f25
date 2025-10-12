@@ -1,5 +1,6 @@
 ---
 title: <b>Week 3</b> (Functions + Iteration)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Oct 19

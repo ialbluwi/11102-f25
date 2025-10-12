@@ -1,6 +1,5 @@
 ---
 title: <b>Week 2</b> (Conditionals + Functions)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Oct 13
@@ -13,4 +12,4 @@ Oct 15
   : [P4E.4](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=55.16)
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/149528) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/149529)
