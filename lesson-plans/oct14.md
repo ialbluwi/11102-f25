@@ -153,9 +153,7 @@ While this code is correct, it is not as clean as the first solution we proposed
 Rewrite the following piece of code so that they do **not** use `and`, `or`, or `not`. 
 
 ```python
-if x == 1:
-    print("At least one is 1")
-elif y == 1:
+if x == 1 or y == 1:
     print("At least one is 1")
 else:
     print("Oops!")
