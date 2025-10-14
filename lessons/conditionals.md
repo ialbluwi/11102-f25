@@ -63,6 +63,7 @@ else:
 This code will never print <code>Warm</code>. To fix it, we need to swap the first condition with the second.
 </details>
 
+
 ## Exercise 3
 
 Write a program that reads three integers and prints the maximum.
@@ -171,3 +172,17 @@ id="or_1"
 language="python"
 file='code/or_1.py'
 %}
+
+
+## Exercise 5
+
+Write a program that reads two integers, x and y, and an operator: `+`, `-`, `*`, or `/`. 
+The program should print out the result of the operation or output an error message if the oepration is not valid.
+
+{% include expandable-code.html
+title="Solution"
+id="calc"
+language="python"
+file='code/calc.py'
+%}
+
