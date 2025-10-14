@@ -18,7 +18,7 @@ Note that this is not consistent with the book chapter. The book chapter starts 
 
 This lecture is example-based. Therefore, the expectation is that you'll alternate between showing students code and asking them for the output, explaining a problem and asking students to help you live-code the solution, and simply writing code and explaining it.
 
-Below is a list of the minimum examples students need to see. The list is followed by another extra list of examples. Try to solve from these extra examples as much as you can. 
+Below is a list of the minimum examples students need to see. 
 
 ## Basic Syntax
 
@@ -167,7 +167,7 @@ for i in range(10):
 print("Max = ", result)
 ```
 
-## More Practice
+## Shapes
 
 ```python
 # QUESTION: Write a program that reads a positive integer n
