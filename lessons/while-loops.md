@@ -1,9 +1,10 @@
 ---
 layout: page
-title:  October 21
+title:  October 23
 nav_exclude: true
 author: Ibrahim Albluwi
 ---
+
 
 <style>
 h2 {
@@ -13,26 +14,24 @@ h2 {
 }
 </style>
 
-# Iteration (for-loops)
+# Iteration (while-loops)
 <span style="font-size: 0.8em; font-weight: normal; color: gray;">Bisc syntax and examples.</span>
 
 ## Basic Syntax
 
 ```python
-# Prints 'Hello' 10 times.
-for i in range(10):
-    print("Hello")
+# Repeats until the user enters "exit".
+name = input("Enter a name (write exit to stop): ")
+while name != 'exit':
+    print("Hello ", name)
+    name = input("Enter a name (write exit to stop): ")
 ```
 
 ---
 
-```python
-# Prints 0 1 2 3 4 5 6 7 8 9
-# We read this as:
-# for every i in the range 0 to 9
-for i in range(10):
-    print(i)
-```
+<iframe height="400" width="100%" 
+src="https://trinket.io/embed/python3/your-trinket-id?toggleCode=true"
+frameborder="0" allowfullscreen></iframe>
 
 ---
 
