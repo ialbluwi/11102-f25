@@ -27,6 +27,10 @@ While students are solving the exercise, go around the classroom to help, answer
 > - **A point**: Two integers representing the $$x$$ and $$y$$ coordinates for a point on the perimeter of the circle.
 > 
 > Your program must output the **_area_** of the circle.
+>
+> Remember that the area of the circle is $$\pi r^2$$, and the distance between two points $$(x_1, y_1)$$ and $$(x_2, y_2)$$ can be computed using the formula:
+>
+> $$[\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}]$$
 
 > You don't have wait until all or most students are done. The goal of giving them ~5 minutes is to force them to think a bit before live-coding begins.
 {: .note }
