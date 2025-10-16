@@ -16,7 +16,7 @@ photo: staff/alaa.png
 <details class="jtd-accordion">
   <summary>Office Hours</summary>
   <ul>
-    <li>SuTuTh: xx - xx</li>
-    <li>MoWe: xx - xx</li>
+    <li><b>SuTuTh</b>: 12:00 PM - 1:00 PM</li>
+    <li><b>MoWe</b>: 1:00 PM - 2:00 PM</li>
   </ul>
 </details>

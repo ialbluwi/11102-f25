@@ -17,230 +17,166 @@ h2 {
 # Iteration (while-loops)
 <span style="font-size: 0.8em; font-weight: normal; color: gray;">Bisc syntax and examples.</span>
 
+## Overview
+
+For loops are suitable for situations where we know how many times we want to repeat a certian piece of code. However, if the number of iterations is unknown, we can use a `while` loop. This loop allows repeating a block of code **as long as** a certain condition is met.
+
 ## Basic Syntax
 
+### Example 1. 
+The following code repeats until the user enters anything other than "1234".
+
 ```python
-# Repeats until the user enters "exit".
-name = input("Enter a name (write exit to stop): ")
-while name != 'exit':
-    print("Hello ", name)
-    name = input("Enter a name (write exit to stop): ")
+psw = input("Enter a password: ")
+while psw == '1234':
+    print("This is not a good password!")
+    psw = input("Enter a password: ")
+
+print("Thank you!")
 ```
 
----
-
-<iframe height="400" width="100%" 
-src="https://trinket.io/embed/python3/your-trinket-id?toggleCode=true"
-frameborder="0" allowfullscreen></iframe>
-
----
+How can we change the code so that it repeats until the user enters a password of length greater than `8`?
 
 ```python
-# Prints 0 1 2 3 4 5 6 7 8 9 10
-for i in range(11):
-    print(i)
+# Repeats until the user enters a password more than 8 characters long.
+psw = input("Enter a password: ")
+while len(psw) < 8:
+    print("This is a short password!")
+    psw = input("Enter a password: ")
+
+print('Thank you!')
 ```
 
----
+### Example 2.
+The following code counts down from 5 to 1 and then prints `Booom!`
 
 ```python
-# Prints 1 2 3 4 5 6 7 8 9 10
-for i in range(1, 11):
-    print(i)
+# Counts down from 5 to 1.
+c = 5
+while c >= 1:
+    print(c)
+    c = c - 1
+print("Booom!")
 ```
 
----
+This `while` loop is equivalent to the following `for` loop.
 
 ```python
-# Prints 5 6 7 8
-for i in range(5, 9):
-    print(i)
+# Counts down from 5 to 1.
+for c in range(5, 0, -1):
+    print(c)
+
+print("Booom!")
 ```
 
----
+> Every `for` loop can be written as a `while` loop. However, it is usually clearer and shorter if you use a `for` loop for situations where the number of iterations is known before-hand (as in the count-down example)
+{: .tip}
+
+### Exercise 1
+
+Explain in your own words what the following code does, then run it to check if your understanding is correct or not.
 
 ```python
-# Prints 1 3 5 7 9
-# The third argument is the skip value
-for i in range(1, 11, 2):
-    print(i)
+c = 0
+answer = input("Do you like Python? (enter y or n): ")
+while answer != 'y':
+    print("Are you " + 'really ' * c + "sure you don't like Python?")
+    print("I will ask again:")
+    answer = input("Do you like Python? (enter y or n): ")
+    c = c + 1
+
+print("Thank you! I knew you loved Python!")
 ```
 
----
+### Exercise 2
+
+Catch and fix the but in the following program. It is supposed to skip 2's while counting down from `n` to `1`. you can run the program with multiple inputs to find the error.
 
 ```python
-# Does not print anything.
-for i in range(10, 1):
-    print(i)
-```
-
----
-
-```python
-# Prints 10 9 8 7 6 5 4 3 2
-for i in range(10, 1, -1):
-    print(i)
-```
-
----
-
-```python
-# Does not print anything
-for i in range(-10, -1, -2):
-    print(i)
-```
-
----
-
-```python
-# Prints -10 -7 -4
-for i in range(-10, -1, 3):
-    print(i)
-```
-
----
-
-```python
-# QUESTION: Write a program that reads the grades for 5 students 
-# and Outputs 'Pass' or 'Fail'.
-
-# SOLUTION.
-print("Enter the student grades.")
-for i in range(1, 6):
-    grade = int(input("Student " + str(i) + ": "))
-    if grade >= 50:
-        print("Pass")
-    else:
-        print("Fail")
-```
-## Sum and Factorial
-
-```python
-# QUESTION: Write a program that reads a positive integer n 
-# and prints the sum of the integers from 0 to n.
-# For example, if the integer is 5, the output should be
-# the sum of 0 + 1 + 2 + 3 + 4 + 5.
-
-# SOLUTION.
 n = int(input("Enter a number: "))
-result = 0
-for i in range(n + 1):
-    result = result + i # add i to the old result
-
-print('Sum = ', result)
+while n != 0:
+    print(n)
+    n = n - 2
+print("Done!")
 ```
 
----
+<details class="jtd-accordion">
+  <summary>Solution</summary>
+    This is a classic example of an <b>infinite loop</b>. The program will run for ever if the user enters an <i>odd</i> number or a <i>negative</i> number, because <code>n</code> will never be equal to 0. To fix this issue, change the loop condition to be <code>while n > 0</code>.
+</details>
+
+## Breaking Out of a Loop
+
+The following is another way to write the password example.
 
 ```python
-# QUESTION: Write a program that reads a positive integer n 
-# and prints its factorial.
-# For example, if the integer is 5, the output should be
-# the result of 1 x 2 x 3 x 4 x 5.
+while True:
+    psw = input("Enter a password: ")
+    if len(psw) > 8:
+        break
+    print("Your password is too short!")
 
-# SOLUTION.
-n = int(input("Enter a number: "))
-
-result = 1
-for i in range(1, n + 1):
-    result = result * i
-
-print('Factorial = ', result)
+print("Thank you!")
 ```
 
-## Maximum
+There are two new things going on in the above loop:
+- The `while True` statement means that we want the loop to repeat for ever.
+- The `break` statement stops the loop. If password length is greater than `8`, the `break` statement will exit the loop, which means that the following `print` statement will **not** be executed.
+
+### Exercise 3
+
+Write a program that keeps reading integers from the user until the user enters a negative integer. The program should then print the average of the entered numbers.
+
+**Note.** To compute the average, we need to know the sum of the entered integers, and how many integers the user entered.
+
+{% include expandable-code.html
+title="Solution"
+id="avg-while"
+language="python"
+file='code/avg-while.py'
+%}
+
+### Exercise 4
+
+Rewrite the 'Are you really really sure' example above using `while True` and `break`.
+
+{% include expandable-code.html
+title="Solution"
+id="really-while"
+language="python"
+file='code/really-while.py'
+%}
+
+## Skipping an Iteration
+
+To skip an iteration, you can use `continue`. This statement stops the current iteration and goes immediately to the loop condition (skipping the lines below `continue`).
+
+What does the following program print?
 
 ```python
-# QUESTION: Write a program that reads 10 positive integers
-# and prints the maximum.
+battery = 100
+while battery > 0:
+    print("Flying drone. Battery = ", battery, "%")
+    battery = battery - 10
 
-# SOLUTION.
-print("Enter 10 numbers: ")
-current_max = None
-for i in range(10):
-    num = int(input())
+    if battery > 20:
+        continue
 
-    if current_max == None or current_max > result:
-        current_max = num
-
-print("Max = ", current_max)
+    print("WARNING: Low Battery!!")
 ```
-
-## Shapes
-
-```python
-# QUESTION: Write a program that reads a positive integer n
-# and prints a square of '*' of size n x n.
-# If the user enters a negative number, output an error message.
-#
-# Example output if n = 5:
-# * * * * *
-# * * * * *
-# * * * * *
-# * * * * *
-# * * * * *
-
-# SOLUTION.
-n = int(input("Enter the size of the square: "))
-if n <= 0:
-    print("ERROR: INVALID SIZE")
-else:
-    for i in range(1, n):
-        print('*' * n)
-```
-
----
-
-```python
-# QUESTION. What is the output of the following program
-# in each of the following cases:
-# If n = 0
-# If n = 1
-# If n = 2
-# If n = 5
-
-n = int(input("Enter the size of the square: "))
-for i in range(n + 1):
-    print('*' * i)
-
-# ANSWER.
-# If n = 0:     No output
-#
-# If n = 1:     *
-#
-# If n = 2:     *
-#               **
-#
-# If n = 5:     *
-#               **
-#               ***
-#               ****
-#               *****
-```
-
----
-
-```python
-# QUESTION: Write a program that reads a positive integer n
-# and prints a triangle of '*' of size n as shown below.
-#
-# Example output if n = 5:
-#         *
-#       * *
-#     * * *
-#   * * * *
-# * * * * *
-
-# SOLUTION.
-n = int(input("Enter the size of the triangle: "))
-for i in range(n + 1):
-    print(' ' * (n-i) + '*' * i)
-    # print n-i spaces followed by i stars
-
-#               5 spaces 0 stars
-#         *     4 spaces 1 stars
-#       * *     3 spaces 2 stars
-#     * * *     2 spaces 3 stars
-#   * * * *     1 space  4 stars
-# * * * * *     0 spaces 5 stars
-```
+<details class="jtd-accordion">
+  <summary>Solution</summary>
+    <pre>Flying drone. Battery =  100 %
+Flying drone. Battery =  90 %
+Flying drone. Battery =  80 %
+Flying drone. Battery =  70 %
+Flying drone. Battery =  60 %
+Flying drone. Battery =  50 %
+Flying drone. Battery =  40 %
+Flying drone. Battery =  30 %
+WARNING: Low Battery!!
+Flying drone. Battery =  20 %
+WARNING: Low Battery!!
+Flying drone. Battery =  10 %
+WARNING: Low Battery!!</pre>
+</details>
