@@ -193,9 +193,33 @@ file='code/frames-1.py'
 
 ## Local Variables
 
+### Exmaple 1
+
 What is the output of the following code?
 
 ```python
+def fun():
+    a = 2
+    b = 4
+    result = a**2 * b**2
+
+fun()
+print(a, b, result)
+```
+
+This program will crash.
+
+The variables `a`, `b` and `result` were all defined inside the function. Therefore, they are unknown outside the function. These are called **_local_** variables, which get created when the function is called, and then get destroyed when the function completes.
+
+You can trace the execution with PythonTutor to see what happens.
+
+### Example 2
+
+What is the output of the following code?
+
+```python
+import math
+
 def fun(a, b):
     a = a ** 2
     b = b ** 2
@@ -211,34 +235,10 @@ Note that there are four variables in the program:
 - The `a` and `b` that are **_local_** to the function. These are created when the function is called and are destroyed when the function ends.
 - The `a` and `b` that are defined in the **_global_** frame (after the function).
 
-You can use PythonTutor to trace the code and understand what happens.
+Try tracing the program using PythonTutor to understand what happens:
 
-Here is what happens:
 - The program starts at `a = 3` and then `b = 4`.
 - Next, `fun` is called and two new variables are created. A new `a` holding a copy of `3` and a new `b` holding a copy of `4`.
 - Next, the values  of the new `a` and `b` changes to `9` and `16` (without affecting the other `a` and `b`).
 - When the function ends, the result of `math.sqrt(9 + 16)` is returned, and the **_local_** variables in `fun` are destroyed.
 - The old `a` and `b` (in the global frame) still hold the original values `3` and `4`. 
-
-## Variable Scope
-
-What is the output of the following program?
-
-```python
-def fun():
-    a = a ** 2
-    b = b ** 2
-    return math.sqrt(a + b)
-
-a = 3
-b = 4
-result = fun()
-print(a, b, result)
-```
-
-This program will crash mid-way through. Try it with PythonTutor to see why.
-
-The statement `a = 3` defines `a` in the following lines, but not inside the function (this is called the **_scope_** of the variable `a`). Therefore, `a` is unknown inside the funtion (because it is out of `a`'s scope). 
-
-The main difference between this code and the code before is that in the code before, the function was defined as `fun(a, b)`, rather than `fun()`. This means that the function has local variables named `a` and `b` that receive values when the function is called.
-
