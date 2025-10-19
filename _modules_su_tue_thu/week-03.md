@@ -1,6 +1,5 @@
 ---
 title: <b>Week 3</b> (Functions + Iteration)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Oct 19
@@ -17,4 +16,4 @@ Oct 23
   [P4E.5](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=69.16) (5.1-5.4)
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/150191) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/150407)
