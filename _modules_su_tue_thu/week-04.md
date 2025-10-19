@@ -1,5 +1,6 @@
 ---
 title: <b>Week 4</b> (Iteration)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Oct 26
