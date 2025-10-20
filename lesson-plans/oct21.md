@@ -20,6 +20,9 @@ This lecture is example-based. Therefore, the expectation is that you'll alterna
 
 Below is a list of the minimum examples students need to see. 
 
+> The first set of examples are short. To speed up going through these examples, I'll be using [IPython](https://ipython.org/install.html), which you can install and run through the terminal in VSCode (we don't have to explain to the students what IPython is). The good thing about IPython is that it has colored syntax highlighting and allows repeating mutli-line instructions using the up-arrow key.
+{: .note}
+
 ## Basic Syntax
 
 ```python
