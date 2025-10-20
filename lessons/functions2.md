@@ -238,7 +238,7 @@ Note the following four different variables in the program:
 Try tracing the program using PythonTutor to understand what happens:
 
 - The program starts at `a = 3` and then `b = 4`.
-- Next, `fun` is called and two new variables are created. A new `a` holding a copy of `3` and a new `b` holding a copy of `4`.
-- Next, the values  of the new `a` and `b` changes to `9` and `16` (without affecting the other `a` and `b`).
+- Next, `fun` is called and two new variables are created. A new `a` holding a copy of `3` and a new `b` holding a copy of `4`. These variables are **_local_** to the function.
+- Next, the values  of local variables `a` and `b` change to `9` and `16` (without affecting the other `a` and `b`).
 - When the function ends, the result of `math.sqrt(9 + 16)` is returned, and the **_local_** variables in `fun` are destroyed.
-- The old `a` and `b` (in the global frame) still hold the original values `3` and `4`. 
+- The `a` and `b` in the global frame still hold the original values `3` and `4`. 
