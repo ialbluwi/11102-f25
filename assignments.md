@@ -10,6 +10,7 @@ description: Description of the course assignments.
 - **Deadline**: November 7 @ 11:59 PM.
 - **Submission**: Through Ed.
 - **Details**: TBA on Ed.
+- **Weight**: 2%
 
 # Assignment 2
 
