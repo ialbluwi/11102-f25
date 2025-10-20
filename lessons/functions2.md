@@ -231,7 +231,7 @@ result = fun(a, b)
 print(a, b, result)
 ```
 
-Note that there are four variables in the program:
+Note the following four different variables in the program:
 - The `a` and `b` that are **_local_** to the function. These are created when the function is called and are destroyed when the function ends.
 - The `a` and `b` that are defined in the **_global_** frame (after the function).
 
