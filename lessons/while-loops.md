@@ -90,7 +90,7 @@ print("Thank you! I knew you loved Python!")
 
 ### Exercise 2
 
-Catch and fix the but in the following program. It is supposed to skip 2's while counting down from `n` to `1`. you can run the program with multiple inputs to find the error.
+Catch and fix the bug in the following program. It is supposed to skip 2's while counting down from `n` to `1`. you can run the program with multiple inputs to find the error.
 
 ```python
 n = int(input("Enter a number: "))
