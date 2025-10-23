@@ -163,14 +163,14 @@ def mystery(n):
     <br><br>To understand the code better, try tracing it on a piece of paper for the following values:
     <ul>
         <li> <code>n = 0</code> and no values are given.</li>
-        <li> <code>n = 1</code> and <code>values = 10</code></li>
-        <li> <code>n = 2</code> and <code>values = 10, 5</code></li>
-        <li> <code>n = 6</code> and <code>values = 10, 5, 4, 3, 2, 1</code></li>
-        <li> <code>n = 2</code> and <code>values = 5, 10</code></li>
-        <li> <code>n = 6</code> and <code>values = 1, 2, 3, 4, 5, 6</code></li>
+        <li> <code>n = 1</code> and value is <code>10</code></li>
+        <li> <code>n = 2</code> and the values are: <code>10, 5</code></li>
+        <li> <code>n = 6</code> and the values are: <code>10, 5, 4, 3, 2, 1</code></li>
+        <li> <code>n = 2</code> and the values are: <code>5, 10</code></li>
+        <li> <code>n = 6</code> and the values are: <code>1, 2, 3, 4, 5, 6</code></li>
     </ul>
 </details>
 
 
-> Remember that you can use PythonTutor to trace the code step-by-step and see how the variable values change in each iteration.
+> Remember that you can use [PythonTutor](https://pythontutor.com/python-compiler.html#mode=edit) to trace the code step-by-step and see how the variable values change in each iteration.
 {: .tip}
