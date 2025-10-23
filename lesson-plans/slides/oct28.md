@@ -41,6 +41,8 @@ To force students to think about the big picture, we will ask them to give a **m
 
 You can use the examples in the student [notes](/11102-f25/lessons/iteration-practice). Be prepared with a few more examples, just in case you finish these examples early. The examples don't have to be code-reading examples, they can be anything related to iteration.
 
+The fourth example is the least important one, so skip it if you run out of time. They can study it alone or ask during office hours if you don't get to it.
+
 When solving a code reading question with the students, it is a good idea to:
 1. Give them a 1-2 minutes to work in pairs on coming up with a suitable function name for the code.
 2. Get a few answers from the students and write them on the board.
