@@ -9,7 +9,7 @@ Oct 26
 
 Oct 28
 : Iteration (Practice)
-  : [Notes](/11102-f25/lessons/iteration-practice)
+  : [Notes](/11102-f25/lessons/loops-practice)
 
 
 Oct 30

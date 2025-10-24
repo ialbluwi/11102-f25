@@ -9,7 +9,7 @@ Oct 27
 
 Oct 29
 : Iteration (Turtle Graphics)
-  : [Practice](/11102-f25/lessons/iteration-practice)<br>
+  : [Practice](/11102-f25/lessons/loops-practice)<br>
   [Turtle Graphics](/11102-f25/lessons/iteration-practice)
 
 HW
