@@ -6,7 +6,7 @@ author: Ibrahim Albluwi
 ---
 
 # **7.** Iteration (practice)
-<span style="font-size: 0.8em; font-weight: normal; color: gray;">For October 26, 2025</span>
+<span style="font-size: 0.8em; font-weight: normal; color: gray;">For October 28, 2025</span>
 
 ## Overview
 
