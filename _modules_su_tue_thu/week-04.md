@@ -4,18 +4,17 @@ note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Oct 26
-: Iteration (nested loops)
-  : [P4E.5](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=69.16)
-  <br>Code
+: Iteration (Nested Loops)
+  : [Notes](/11102-f25/lessons/nested-loops)
 
 Oct 28
-: Iteration (practice)
-  : [P4E.5](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=69.16)
-  <br>Code
+: Iteration (Practice)
+  : [Notes](/11102-f25/lessons/iteration-practice)
+
 
 Oct 30
-: Iteration (turtle graphics)
-  : Code
+: Iteration (Turtle Graphics)
+  : [Notes](/11102-f25/lessons/turtle)
 
 HW
 : [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
