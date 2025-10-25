@@ -1,6 +1,5 @@
 ---
 title: <b>Week 4</b> (Iteration)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Oct 26
@@ -17,4 +16,4 @@ Oct 30
   : [Notes](/11102-f25/lessons/turtle)
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/151240) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/151241)

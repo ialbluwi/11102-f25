@@ -1,5 +1,6 @@
 ---
 title: <b>Week 5</b> (Strings + Lists)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 2
