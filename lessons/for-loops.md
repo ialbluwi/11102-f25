@@ -186,7 +186,7 @@ n = int(input("Enter the size of the square: "))
 if n <= 0:
     print("ERROR: INVALID SIZE")
 else:
-    for i in range(1, n):
+    for i in range(1, n+1):
         print('*' * n)
 ```
 
