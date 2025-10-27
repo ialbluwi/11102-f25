@@ -23,7 +23,7 @@ This page includes examples requiring nested iteration (a loop repeated inside a
 
 ## Example 1.
 
-**QUESTION.** Define and implement a function named `mult_table` that receives two numbers `n1` and `n2` as arguments and prints the multiplication table (`1` to `12`) for all the numbers between `n1`n and `n2` inclusive. 
+**QUESTION.** Define and implement a function named `mult_table` that receives two numbers `n1` and `n2` as arguments and prints the multiplication table (`1` to `12`) for all the numbers between `n1` and `n2` inclusive. 
 
 **SOLUTION.** To solve this problem, we need first to be able to print the multiplicatoin table for a single number. Once that is done, we can use a loop to repeat this code for all the numbers in the given range.
 
@@ -110,6 +110,20 @@ if prime:               # check if our assumption changed.
 > - The flag begins raised up (`True`).
 > - The loop checks if `n` has divisors. If a divisor is found, the flag is brought down (changes to `False`). 
 > - After the loop, we check if the flag is still up (`True`) or if it is down (`False`). If it is still up, no divisors were found, and our assumption that `n` is prime is still true.
+
+Another option is to use a counter instead of a flag. The counter begins at `0` and is incremented each time a divisor is found. After the loop, if the counter is still `0`, then `n` is prime. Here is the code using a counter.
+
+```python
+n = 20
+count = 0               # begin with no divisors found
+
+for i in range(2, n):   # check all numbers between 2 and n-1
+    if n % i == 0:      # if i divides n,
+        count += 1      # increment the counter
+
+if count == 0:          # if no divisors were found,
+    print(n)            # then n is prime
+```
 
 Now, we are ready to place this code inside a loop that checks every value between `n1` and `n2` if it is prime or not. Here is a full answer for the question:
 
