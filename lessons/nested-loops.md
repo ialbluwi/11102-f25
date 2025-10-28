@@ -91,7 +91,6 @@ def mult_table(n1, n2):
 To check if a given number `n` is prime, we can check all the numbers between `2` and `n-1` (inclusive) to see if any of them divides `n`. Here is a piece of code that achieves that.
 
 ```python
-n = 20
 prime = True            # assume n is prime
 
 for i in range(2, n):   # If any number i in the range 
@@ -114,7 +113,6 @@ if prime:               # check if our assumption changed.
 Another option is to use a counter instead of a flag. The counter begins at `0` and is incremented each time a divisor is found. After the loop, if the counter is still `0`, then `n` is prime. Here is the code using a counter.
 
 ```python
-n = 20
 count = 0               # begin with no divisors found
 
 for i in range(2, n):   # check all numbers between 2 and n-1
