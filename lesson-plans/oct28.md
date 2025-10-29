@@ -39,7 +39,7 @@ To force students to think about the big picture, we will ask them to give a **m
 
 ## Lecture Outline
 
-You can use the examples in the student [notes](/11102-f25/lessons/iteration-practice). Be prepared with a few more examples, just in case you finish these examples early. The examples don't have to be code-reading examples, they can be anything related to iteration.
+You can use the examples in the student [notes](/11102-f25/lessons/loops-practice). Be prepared with a few more examples, just in case you finish these examples early. The examples don't have to be code-reading examples, they can be anything related to iteration.
 
 The fourth example is the least important one, so skip it if you run out of time. They can study it alone or ask during office hours if you don't get to it.
 
