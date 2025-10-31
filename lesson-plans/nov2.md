@@ -16,14 +16,14 @@ This lecture will introduce strings. The following lecture will involve examples
 
 ## Lecture Topics
 
-Cover everything in [P4E.6](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=79) that does not involve looping over strings. This includes:
+Cover everything in [P4E.6](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=79) excluding 6.6 (iteration), 6.10 (parsing), and 6.11 (fstrings). This includes:
 - What is a string?
 - Indexing (positive and negative).
 - Immutability (`my_string[0] = 'a'` is not allowed).
 - Slicing (with jumps)
 - Comparison (meaning of `==`, `<`, `>`)
 - The `in` operator (without loops. E.g, `'him' in 'Ibrahim'` is `True` while `'ibra' in 'Ibrahim'` is `False` because the operator is case-sensitive).
-- String Methods. Don't cover everything. Tell them that they should look at the book to see what methods are available. Briefly mention/demo methods like: `upper`, `lower`, `islower`, `isupper`, `isalpha`, `isnumeric`, `strip`, `find`. Do not mention functions like `split` because they require lists.
+- String Methods. Don't cover everything. Tell them that they should look at the book to see what methods are available. Briefly mention/demo methods like: `upper`, `lower`, `islower`, `isupper`, `isalpha`, `isnumeric`, and `strip`. Do not mention functions like `split` because they require lists.
 
 ## Notes
 - You can use [this visualization](/11102-f25/lesson-plans/images/slicing.png) when explaining string slicing.
