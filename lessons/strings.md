@@ -93,7 +93,7 @@ def is_palindrome(s):
     return True
 ```
 
-**FOLLOW-UP QUESTION 1.** Can you write the above code using a for-loop?
+**Follow-up question 1.** Can you write the above code using a for-loop?
 
 {% include expandable-code.html
 title="Solution"
@@ -102,7 +102,7 @@ language="python"
 file='code/palindromes-for.py'
 %}
 
-**FOLLOW-UP QUESTION 2.** Can you write the above code using a single line?
+**Follow-up question 2.** Can you write the above code using a single line?
 
 <details class="jtd-accordion">
   <summary>Answer</summary>
