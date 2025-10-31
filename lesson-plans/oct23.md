@@ -5,7 +5,7 @@ nav_exclude: true
 author: Ibrahim Albluwi
 ---
 
-# **7.** Iteration (while-loops)
+# **9.** Iteration (while-loops)
 <span style="font-size: 0.8em; font-weight: normal; color: gray;">For October 23, 2025</span>
 
 ## Lecture Goals

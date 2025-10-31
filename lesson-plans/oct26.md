@@ -5,7 +5,7 @@ nav_exclude: true
 author: Ibrahim Albluwi
 ---
 
-# **7.** Iteration (nested loops)
+# **10.** Iteration (nested loops)
 <span style="font-size: 0.8em; font-weight: normal; color: gray;">For October 26, 2025</span>
 
 ## Lecture Goals

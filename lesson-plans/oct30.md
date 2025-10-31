@@ -5,7 +5,7 @@ nav_exclude: true
 author: Ibrahim Albluwi
 ---
 
-# **7.** Iteration (Turtle Graphics)
+# **12.** Iteration (Turtle Graphics)
 <span style="font-size: 0.8em; font-weight: normal; color: gray;">For October 30, 2025</span>
 
 ## Overview

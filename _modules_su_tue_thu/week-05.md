@@ -4,16 +4,21 @@ note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 2
-: Strings 1 + [**Quiz # 1**{:.label .label-red }](#)
-  : [P4E.6](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=79.16) 
+: Strings (Basics) + **Quiz # 1**{:.label .label-red }
+  : [P4E.6](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=79)<br>
+  [String Slicing](/11102-f25/lesson-plans/images/slicing.png)
 
 Nov 4
-: Strings 2
-  : [P4E.6](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=79.16)
+: Strings (Iteration)
+  : [P4E.6](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=79)<br>
+  [Examples](#)
+
 
 Nov 6
-: Lists (basics)
-  : [TP.9](https://allendowney.github.io/ThinkPython/chap09.html) (excluding TP.9.12)
+: Lists (Basics)
+  : [TP.9](https://allendowney.github.io/ThinkPython/chap09.html) (excluding TP.9.12)<br>
+  [Visualization](/11102-f25/lesson-plans/images/lists-viz.png)<br> [Indexing](/11102-f25/lesson-plans/images/list-indexing.png)
+
 
 HW
 : [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

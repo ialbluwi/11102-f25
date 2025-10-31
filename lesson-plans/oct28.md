@@ -5,7 +5,7 @@ nav_exclude: true
 author: Ibrahim Albluwi
 ---
 
-# **7.** Iteration (practice)
+# **11.** Iteration (practice)
 <span style="font-size: 0.8em; font-weight: normal; color: gray;">For October 28, 2025</span>
 
 ## Overview
