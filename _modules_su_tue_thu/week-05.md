@@ -11,7 +11,7 @@ Nov 2
 Nov 4
 : Strings (Iteration)
   : [P4E.6](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=79)<br>
-  [Examples](#)
+  [Examples](/11102-f25/lessons/strings)
 
 
 Nov 6

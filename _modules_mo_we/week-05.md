@@ -11,7 +11,7 @@ Nov 3
 Nov 5
 : Strings (Iteration) + Lists (Basics)
   : [P4E.6](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=79)<br>
-  [Examples](#)<br>
+  [Examples](/11102-f25/lessons/strings)<br>
   [TP.9](https://allendowney.github.io/ThinkPython/chap09.html) (excluding TP.9.12)<br>
   [Visualization](/11102-f25/lesson-plans/images/lists-viz.png)<br> [Indexing](/11102-f25/lesson-plans/images/list-indexing.png)
 
