@@ -18,7 +18,7 @@ h2 {
 
 ## Basic Iteration
 
-The following three pieces of code all do the same thing (printing the characters of the string, each on a separate line). The first one is the easiest to use.
+The following three pieces of code all do the same thing (printing the characters of the string, each on a separate line).
 
 ```python
 course = 'Introduction'
@@ -39,7 +39,9 @@ while i < len(course):
     print(course[i])
     i += 1
 ```
----
+
+> The first piece of code is **[pythonic](https://realpython.com/ref/glossary/pythonic/)**, but the other two are not. while the three pieces of code all work fine, any professional Python programmer would cringe at the sight of the second and third pieces of code! Nevertheless, we include them here because they are important for examples you will see later on.
+{: .note}
 
 ## Debugging
 
@@ -67,6 +69,17 @@ for c in course[::-1]:
 
 ## Application 1: Palindromes
 
+A _palindrome_ is a string that can be read left-to-right or right-to-left. The following are examples of palindromes and non-palindromes:
+
+**Palindromes.** `a`, `bb`, `bab`, `abccba`, `karak`, `madam`, `level`.<br>
+**Non-Palindromes.** `ab`, `abcdabcd`, `ABCcba`, `hello`.
+
+We would like to write a function that checks if a given string is a palindrome. To do this, we will use two variables:
+- `i`: Goes through the indices left to right.
+- `j`: Goes right-to-left.
+
+At each iteration, we will check if if the character at `i` is the same as the character `j` or not. We stop if either the characters are different (the string is not a palindrome), or if `i` and `j` reach or cross each other.
+
 ```python
 def is_palindrome(s):
     i = 0
@@ -82,20 +95,49 @@ def is_palindrome(s):
 
 **FOLLOW-UP QUESTION 1.** Can you write the above code using a for-loop?
 
+{% include expandable-code.html
+title="Solution"
+id="palindromes-for"
+language="python"
+file='code/palindromes-for.py'
+%}
+
 **FOLLOW-UP QUESTION 2.** Can you write the above code using a single line?
+
+<details class="jtd-accordion">
+  <summary>Answer</summary>
+    Use <code> return s == s[::-1]</code>
+</details>
 
 ## Application 2: Parsing Strings
 
+Function `find` can be used to search for a string inside another string. It returns the index of the string we are searching for, unlike the `in` operator which returns either `True` or `False`. The following are examples:
+
+```python
+# indices:  0123456789...
+title =    "The Prince and The Pauper"
+print(title.find("Prince"))  # 4
+print(title.find("xyz"))     # -1 (not found)
+print(title.find("the"))     # -1 (case-sensitive)
+print(title.find("The"))     # 0 (first occurrence)
+print(title.find("and"))     # 11
+print(title.find(" "))       # 3 (first space)
+```
+
+We will use this function in the following application: Read emails for 10 people and verify if they belong to Jordanian domains.
+
+Note that every email has the `@` character, and every Jordanian email ends with `.jo`. Read and understand the following code:
+
 ```python
 for i in range(1, 11):
-    email = input("Enter your university email " + str(i) + ": ")
-    pos1 = email.find('@')
-    pos2 = email.find('.jo')
+    email = input("Enter your email " + str(i) + ": ")
+    pos_at  = email.find('@')
+    pos_dot = email.find('.jo')
 
-    if pos1 < 0 or pos2 < 0:
+    if pos_at < 0 or pos_dot < 0:
         print("ERROR: Invalid jordanian email")
-        continue
-
-    domain = email[pos1 + 1 : pos2]
-    print("So you are from: ", domain, "!!!")
+    else:
+        # extract the domain name
+        domain = email[pos_at + 1 : pos_dot]
+        print(domain, " is a valid jordanian domain.")
 ```
