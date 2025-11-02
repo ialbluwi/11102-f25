@@ -1,6 +1,5 @@
 ---
 title: <b>Week 5</b> (Strings + Lists)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 3
@@ -16,4 +15,4 @@ Nov 5
   [Visualization](/11102-f25/lesson-plans/images/lists-viz.png)<br> [Indexing](/11102-f25/lesson-plans/images/list-indexing.png)
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/151609) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/151610)

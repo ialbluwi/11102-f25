@@ -1,5 +1,6 @@
 ---
 title: <b>Week 6</b> (Lists)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 9

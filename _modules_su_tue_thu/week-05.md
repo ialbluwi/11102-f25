@@ -21,4 +21,4 @@ Nov 6
 
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/151609) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/151610)
