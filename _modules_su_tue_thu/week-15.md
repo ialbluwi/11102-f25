@@ -3,11 +3,11 @@ title: <b>Week 15</b>
 ---
 
 Jan 11
-: Review and project discussions
+: Review
 
 Jan 13
-: Review and project discussions
+: Review
 
 Jan 15
-: Review and project discussions
+: Review
 
