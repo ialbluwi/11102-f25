@@ -14,7 +14,7 @@ h2 {
 </style>
 
 # Strings (Iteration & Manipulation)
-<span style="font-size: 0.8em; font-weight: normal; color: gray;">Bisc syntax and examples.</span>
+<span style="font-size: 0.8em; font-weight: normal; color: gray;">Basic syntax and examples.</span>
 
 ## Basic Iteration
 
