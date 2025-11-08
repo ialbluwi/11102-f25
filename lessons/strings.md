@@ -130,14 +130,23 @@ Note that every email has the `@` character, and every Jordanian email ends with
 
 ```python
 for i in range(1, 11):
-    email = input("Enter your email " + str(i) + ": ")
+    email = input("Enter your email " + str(i) + ": ").lower()
+    
+    # pos_at < 0 ----> No @ in email
+    # pos_at = 0 ----> email begins with @
     pos_at  = email.find('@')
-    pos_dot = email.find('.jo')
-
-    if pos_at < 0 or pos_dot < 0:
+    if pos_at <= 0:
         print("ERROR: Invalid jordanian email")
-    else:
-        # extract the domain name
-        domain = email[pos_at + 1 : pos_dot]
-        print(domain, " is a valid jordanian domain.")
+        continue
+
+    domain = email[pos_at + 1:]
+    pos_dot = domain.find('.jo')
+    # pos_dot < 0 -----> no .jo after @
+    # pos_dot = 0 -----> .jo right after @
+    if pos_dot <= 0:
+        print("ERROR: Invalid jordanian email")
+        continue
+
+    # extract the domain name without .jo
+    print(domain[: pos_dot], "is a valid jordanian domain.")
 ```
