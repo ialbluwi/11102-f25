@@ -1,19 +1,18 @@
 ---
 title: <b>Week 6</b> (Lists)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 9
 : Lists (practice)
-  : Code
+  : [Examples (part 1)](/11102-f25/lessons/list-examples1)
 
 Nov 11
 : Lists (practice)
-  : Code
+  : [Examples (part 2)](/11102-f25/lessons/list-examples2)
 
 Nov 13
-: 2D Lists (basics)
-  : Code <br> Notes
+: Lists (practice)
+  : [Examples (part 3)](/11102-f25/lessons/list-examples3)
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/151998) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/151999)

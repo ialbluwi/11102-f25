@@ -13,7 +13,7 @@ h2 {
 }
 </style>
 
-# List Examples and Exercises (Part 1)
+# List Exercises (Part 1)
 {: .no_toc}
 
 ## Table of contents
@@ -22,6 +22,7 @@ h2 {
 1. TOC
 {:toc}
 
+----
 ## Exercise 1: Reverse The Input 
 
 Write a program that reads a list of `20` integers from the user, then prints them in reverse order.
@@ -36,6 +37,8 @@ for i in range(N):
 print("The numbers in reverse order are:")
 print(nums[::-1])
 ```
+
+----
 
 ## Example 2: Sort the Input
 
@@ -52,6 +55,8 @@ while True:
 print("The numbers in sorted order are:")
 print(sorted(nums))
 ```
+
+----
 
 ## Example 3: Random Unique Numbers
 
@@ -72,6 +77,8 @@ print("The unique random numbers are:")
 print(sorted(nums))
 ```
 
+----
+
 ## Example 4: Is Equivalent
 
 Define a function `is_equivalent(a, b)` that takes two lists of integers as arguments and returns `True` if both lists contain the same elements (regardless of order and frequency), and `False` otherwise.
@@ -84,7 +91,7 @@ a = [1, 2, 3]
 b = [1, 2, 1, 2, 2, 2, 1, 3, 3]
 print(is_equivalent(a, b))
 
-# should print not equivalent bevause of 3 and 4
+# should print not equivalent because of 3 and 4
 a = [1, 2, 4]
 b = [1, 2, 1, 2, 2, 2, 1, 3, 3]
 print(is_equivalent(a, b))
@@ -105,6 +112,8 @@ def is_equivalent(a, b):
 
     return True
 ```
+
+----
 
 ## Exercise 5 (Code Reading)
 
@@ -133,6 +142,7 @@ What does the above function return in each of the following cases?
     </ol>
 </details>
 
+----
 ## Exercise 6 (Code Reading)
 
 Read and understand the following function, then suggest suitable name for it.

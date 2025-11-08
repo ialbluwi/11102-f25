@@ -1,5 +1,6 @@
 ---
 title: <b>Week 7</b> (Files + Dictionaries)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 17

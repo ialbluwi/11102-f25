@@ -13,7 +13,7 @@ h2 {
 }
 </style>
 
-# List Examples and Exercises (Part 3)
+# List Exercises (Part 3)
 {: .no_toc}
 
 ## Table of contents
@@ -21,6 +21,8 @@ h2 {
 
 1. TOC
 {:toc}
+
+----
 
 ## Exercise 1 (Code Reading)
 
@@ -48,6 +50,7 @@ What does the above code print in each of the following cases?
     </ol>
 </details>
 
+----
 
 ## Exercise 2 (Code Reading)
 
@@ -69,6 +72,7 @@ def mystery(a):
     The function finds the maximum element in the list `a` and places it at the front (index 0) of the list. A suitable name would be <code>move_max_to_front(a)</code>.
 </details>
 
+----
 
 ## Exercise 3 (Code Reading)
 
@@ -87,6 +91,8 @@ def mystery(nums, n):
   <summary>Solution</summary>
     The function searches for the last occurrence of the integer <code>n</code> in the list <code>nums</code> and returns its index. If <code>n</code> is not found, it returns -1. A suitable name would be <code>find_last_index(nums, n)</code>.
 </details>
+
+----
 
 ## Exercise 4 (Debugging)
 
@@ -123,6 +129,8 @@ def find_index(nums, target):
             break
     return pos
 ```
+
+----
 
 ## Exercise 5 (Debugging)
 

@@ -13,7 +13,7 @@ h2 {
 }
 </style>
 
-# List Examples and Exercises (Part 2)
+# List Exercises (Part 2)
 {: .no_toc}
 
 ## Table of contents
@@ -22,6 +22,7 @@ h2 {
 1. TOC
 {:toc}
 
+----
 
 ## Example 1: Check if Sorted
 
@@ -41,6 +42,8 @@ print(is_sorted([10, 20, 20, 30]))
 print(is_sorted([]))    # An empty list is considered sorted
 print(is_sorted([42]))  # A single-element list is considered sorted
 ```
+
+----
 
 ## Example 2: Exam Grades
 
@@ -63,6 +66,8 @@ for i in range(N):
 for i in range(N):
     print("Total grade for student", i + 1, ":", midterm[i] + final[i])
 ```
+
+----
 
 ## Exercise 3 (Code Reading)
 
@@ -91,6 +96,8 @@ What does the above code print in each of the following cases?
     </ol>
 </details>
 
+----
+
 ## Exercise 4 (Code Reading)
 
 ```python
@@ -115,6 +122,7 @@ Understand what the above code does and then rewrite it using a single line.
         <code> print(a[::-1]) </code>
 </details>
 
+----
 
 ## Exercise 5 (Code Reading)
 
