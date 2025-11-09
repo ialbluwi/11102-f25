@@ -156,7 +156,7 @@ def mystery(a, b):
         return False
     
     for i in range(N2):
-        if a[i: i+N1] == b:
+        if a == b[i: i+N1]:
             return True
     
     return False
