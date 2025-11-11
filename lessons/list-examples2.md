@@ -43,6 +43,14 @@ print(is_sorted([]))    # An empty list is considered sorted
 print(is_sorted([42]))  # A single-element list is considered sorted
 ```
 
+> We can solve problem using a single line as follows:
+>```python
+> def is_sorted(nums):
+>     return nums == sorted(nums)
+>```
+> However, the above solution is less efficient than our solution, since it creates a copy of the list and sorts the elements. For small lists, this is fine. However, for large lists (e.g., containing 1 million elements), this can be a problem. We will discuss program efficiency later in the course.
+{: .note }
+
 ----
 
 ## Example 2: Exam Grades
@@ -143,6 +151,7 @@ What does the above code return in each of the following cases?
 
 <details class="jtd-accordion">
   <summary>Solution</summary>
+  This code checks if _any_ element in the first half of the list is also in the second half of the list.
     <ol>
         <li> <code>False</code></li>
         <li> <code>True</code></li>
