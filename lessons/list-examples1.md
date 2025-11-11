@@ -114,36 +114,7 @@ def is_equivalent(a, b):
 ```
 
 ----
-
 ## Exercise 5 (Code Reading)
-
-```python
-def mystery(a):
-    N = len(a)
-    for i in range(N // 2):
-        if a[i] in a[N // 2:]:
-            return True
-    return False
-```
-
-What does the above function return in each of the following cases?
-1. If `a = [1]`
-2. If `a = [1, 1, 1, 1, ...]` (100 elements)
-3. If `a = [1, 2, 3, 4, ...]` (100 elements)
-4. If `a = [1, 2, 3, ..., 50, 1, 2, 3, ..., 50]` (100 elements)
-
-<details class="jtd-accordion">
-  <summary>Solution</summary>
-    <ol>
-        <li> <code>False</code></li>
-        <li> <code>True</code></li>
-        <li> <code>False</code></li>
-        <li> <code>True</code></li>
-    </ol>
-</details>
-
-----
-## Exercise 6 (Code Reading)
 
 Read and understand the following function, then suggest suitable name for it.
 
