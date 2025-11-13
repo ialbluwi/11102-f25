@@ -9,12 +9,16 @@ description: Description of the course assignments.
 - **Topic**: Prompt Engineering.
 - **Deadline**: November 7 @ 11:59 PM.
 - **Submission**: Through Ed.
-- **Details**: TBA on Ed.
+- **Details**: Announced on Ed.
 - **Weight**: 2%
 
 # Assignment 2
 
-Stay tuned!
+- **Topic**: Command Line Interfaces.
+- **Deadline**: December 13th, 2025 @ 11:59 PM. 
+- **Submission**: Through Ed.
+- **Details**: Announced on Ed.
+- **Weight**: 3%
 
 # Assignment 3
 
