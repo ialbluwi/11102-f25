@@ -4,16 +4,16 @@ note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 16
-: 2D Lists (practice)
-    : Code
+: Aliasing vs. Copying
+    :[Notes](lessons/list-copying.md)
 
 Nov 18
-: Files
-    : [P4E.7](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=91.16) (excluding P4E.7.7)
+: 2D Lists
+    : [Notes](lessons/lists-of-lists.md)
 
 Nov 20
 : Dictionaries
-    : [P4E.9](https://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf#page=121.16)
+    : [Notes](lessons/dictionaries.md)
 
 HW
 : [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
