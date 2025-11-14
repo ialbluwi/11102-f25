@@ -5,7 +5,7 @@
         "markdown": true,
         "scminput": false,
         "cpp": false,
-        "python": false,
+        "python": true,
         "yaml": true
     }
 }
