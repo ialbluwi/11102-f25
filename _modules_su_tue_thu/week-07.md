@@ -10,6 +10,7 @@ Nov 16
 Nov 18
 : 2D Lists
     : [Notes](/11102-f25/lessons/lists-of-lists)
+    
 Nov 20
 : Dictionaries
     : [Notes](/11102-f25/lessons/dictionaries)
