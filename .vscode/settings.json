@@ -4,7 +4,7 @@
         "plaintext": true,
         "markdown": true,
         "scminput": false,
-        "cpp": false,
+        "cpp": true,
         "python": true,
         "yaml": true
     }

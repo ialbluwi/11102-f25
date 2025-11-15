@@ -107,7 +107,7 @@ The code can be made more concise using the `get` method of dictionaries:
 The method `get(key, default)` returns the value associated with `key` if it exists; otherwise, it returns `default`. In our example, if `char` is not in `frequency`, `get` returns `0`, so we add `1` to it.
     
 
-# Example 2
+## Example 2
 
 Define a function that receives a string and returns a dictionary mapping word lengths to the words in the string that have that length.
 
@@ -134,8 +134,8 @@ def words_by_length(s):
         n = len(word)
         if n not in dictionary:
             dictionary[n] = []
-
         dictionary[n].append(word)
         
     return dictionary
 ```
+

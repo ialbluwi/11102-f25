@@ -1,6 +1,5 @@
 ---
 title: <b>Week 7</b> (2D Lists + Dictionaries)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 16
@@ -16,4 +15,4 @@ Nov 20
     : [Notes](/11102-f25/lessons/dictionaries)
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/152396) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/152397)

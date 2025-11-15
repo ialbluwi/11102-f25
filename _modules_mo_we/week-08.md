@@ -1,5 +1,6 @@
 ---
 title: <b>Week 8</b> (Testing & SE)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 24
