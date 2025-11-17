@@ -104,13 +104,13 @@ Define a function that receives a 2D list and prints each row on a separate line
 ### Solution
 
 ```python
-def print_rows_with_sums(matrix):
+def row_sums(matrix):
     for row in matrix:
         row_sum = sum(row)
         print(row, "Sum:", row_sum)
 
 matrix = create_2D(3, 4, 1)
-print_rows_with_sums(matrix)
+row_sums(matrix)
 
 # Output:
 # [1, 1, 1, 1] Sum: 4
@@ -120,30 +120,30 @@ print_rows_with_sums(matrix)
 
 ## Exercise 2
 
-Define a function that receives a 2D list and fills it with random integers between 0 and 9.
+Define a function that receives a list of lists and fills it with random integers between 0 and 9.
 
 ### Solution
 
 ```python
 import random
 
-def fill_2D_with_random(matrix):
-    for row in matrix:
+def fill_2D_random(a):
+    for row in a:
         for i in range(len(row)):
             row[i] = random.randint(0, 9)
 
-matrix = create_2D(3, 4, 0)
-fill_2D_with_random(matrix)
-print_2D(matrix)
+a = create_2D(3, 4, 0)
+fill_2D_random(a)
+print_2D(a)
 ```
 
 Here is an alternative implementation that uses indices to access elements:
 
 ```python
-def fill_2D_with_random(matrix):
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            matrix[i][j] = random.randint(0, 9)
+def fill_2D_random(a):
+    for i in range(len(a)):
+        for j in range(len(a[i])):
+            a[i][j] = random.randint(0, 9)
 ```
         
 
@@ -159,10 +159,10 @@ Below are three different implementations of the function. Familiarize yourself 
 # MAIN LOGIC: For every row: Go through every value 
 # in the row, add it to total, and increment count.
 
-def average_2D(matrix):
+def average_2D(a):
     total = 0
     count = 0
-    for row in matrix:
+    for row in a:
         for value in row:
             total += value
             count += 1
@@ -174,10 +174,10 @@ def average_2D(matrix):
 # MAIN LOGIC: For every row: Sum the row and add to 
 # total, increment count by length of the row.
 
-def average_2D(matrix):
+def average_2D(a):
     total = 0
     count = 0
-    for row in matrix:
+    for row in a:
         total += sum(row)
         count += len(row)
 
@@ -186,21 +186,32 @@ def average_2D(matrix):
 
 ```python
 # MAIN LOGIC: For every row index r and column index c:
-# Add matrix[r][c] to total, and increment count.
+# Add a[r][c] to total, and increment count.
 
-def average_2D(matrix):
-    N = len(matrix) # number of rows
+def average_2D(a):
+    N = len(a) # number of rows
     total = 0
     count = 0
-    
+
     for r in range(N):
-        M = len(matrix[r])  # number of columns in row r
+        M = len(a[r])  # number of columns in row r
         for c in range(M):
-            total += matrix[r][c]
+            total += a[r][c]
             count += 1
 
     return total / count
 ```
+
+{: .important-title }
+> NOTE
+>
+> The above code works for non-rectangular 2D lists (i.e., lists where different rows may have different lengths). If you know that the 2D list is rectangular, you can optimize the code slightly by calculating the number of columns only once as shown in the code below.
+{% include expandable-code.html
+title="Average of Rectangular 2D List"
+id="rect-avg"
+language="python"
+file='code/avg-2d.py'
+%}
 
 ## Exercise 4
 
@@ -218,7 +229,7 @@ def column_sum(matrix, c):
 
 ## Exercise 5
 
-Define a function that receives a 2D list and prints the sum of each column.
+Define a function that receives a rectangular 2D list and prints the sum of each column.
 
 ### Solution
 
@@ -250,3 +261,14 @@ def column_sums(matrix):
         
         print("Sum of column", c, "is", total)
 ```
+
+## Try It Yourself
+
+Write a function that asks the user to enter the number sections and then for each section asks the user to enter the number of students in that section. The function should then create a 2D list where each row represents a section and contains the student IDs (integers) for that section. The function should fill the 2D list with random student IDs between 1000 and 9999 and then return the resulting 2D list.
+
+{% include expandable-code.html
+title="Solution"
+id="sections-2d"
+language="python"
+file='code/2d-sections.py'
+%}
