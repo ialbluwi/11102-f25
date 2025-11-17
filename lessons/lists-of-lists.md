@@ -189,12 +189,12 @@ def average_2D(matrix):
 # Add matrix[r][c] to total, and increment count.
 
 def average_2D(matrix):
-    N = len(matrix)     # number of rows
-    M = len(matrix[0])  # number of columns
-
+    N = len(matrix) # number of rows
     total = 0
     count = 0
+    
     for r in range(N):
+        M = len(matrix[r])  # number of columns in row r
         for c in range(M):
             total += matrix[r][c]
             count += 1
