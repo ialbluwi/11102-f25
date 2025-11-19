@@ -114,12 +114,14 @@ Define a function that receives a string and returns a dictionary mapping word l
 ### Example
 
 ```
-input: "I love programming in Python"
-output: {
-    1: ["I"],
-    4: ["love", "in"],
-    11: ["programming"],
-    6: ["Python"]
+input: "I like programming in Python very much"
+output: 
+{
+    1:  ['I'], 
+    4:  ['like', 'very', 'much'], 
+    11: ['programming'], 
+    2:  ['in'], 
+    6:  ['Python']
 }
 ```
 
