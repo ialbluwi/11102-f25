@@ -19,7 +19,7 @@ Consider the following data:
 
 ```
 Ahmad    0771234567
-Lina     0789876543
+Lina     0777777777
 Omar     0795556666
 Sara     0784443333
 Salim    0778889999
@@ -37,9 +37,9 @@ The following code creates a dictionary representing the phone book:
 ```python
 phone_book = {
     "Ahmad": "0771234567",
-    "Lina": "0789876543",
-    "Omar": "0795556666",
-    "Sara": "0784443333",
+    "Lina" : "0777777777",
+    "Omar" : "0795556666",
+    "Sara" : "0784443333",
     "Salim": "0778889999"
 }
 ```
@@ -49,9 +49,13 @@ phone_book = {
 You can access a value in the dictionary by using its key inside square brackets:
 
 ```python
-print(phone_book["Lina"])  # Output: 0789876543
+print(phone_book["Lina"])  # Output: 0777777777
 print(phone_book["Omar"])  # Output: 0795556666
-print(phone_book["Ali"])   # KeyError: 'Ali' (not found)
+print(phone_book["Ali"])   # ERROR: 'Ali' is not in the dictionary
+
+print(phone_book[0])       # ERROR: 0 is not in the dictionary
+print(phone_book[1:4])     # Keys in dictionaries are not indexed like lists
+                           # Dictionaries do not support slicing
 ```
 
 ## Common Dictionary Operations
@@ -71,6 +75,10 @@ del phone_book["Salim"]
 # Checking if a key exists
 if "Lina" in phone_book:
     print("Lina's number is:", phone_book["Lina"])
+
+# The in operator does not check for values
+if "0777777777" in phone_book:
+    print("This will not print because values are not checked.")
 
 # Iterating over keys:
 for name in phone_book:
