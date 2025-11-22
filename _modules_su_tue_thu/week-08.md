@@ -4,7 +4,7 @@ title: <b>Week 8</b> (Testing & SE)
 
 Nov 23
 : Introduction to Sofware Engineering
-    : [Slides](/11102-f25/lessons/slides/SE-intro.pdf)<br>
+    : [Slides](/11102-f25/lessons/slides/SE-Intro.pdf)<br>
 
 Nov 25
 : Testing (Introduction)
