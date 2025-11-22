@@ -1,6 +1,5 @@
 ---
 title: <b>Week 8</b> (Testing & SE)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 23
@@ -16,4 +15,4 @@ Nov 27
     : [Notes](/11102-f25/lessons/pytest)<br>
 
 HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: [**Exercises**{:.label .label-purple }](https://edstem.org/us/courses/87448/lessons/152909) [**Self-Assessment**{:.label .label-green }](https://edstem.org/us/courses/87448/lessons/152910)
