@@ -4,12 +4,12 @@ note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 24
-: TBA
-  : TBA
+: Software Engineering and Testing
+  : [Slides](/11102-f25/lessons/slides/SE.pdf)
 
 Nov 26
-: TBA
-  : TBA
+: Testing & Pytest
+  : [Notes](/11102-f25/lessons/pytest)<br>
 
 HW
 : [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

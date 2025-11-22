@@ -4,17 +4,16 @@ note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 23
-: Testing (Intro)
-    : [Video (Intro)](https://cs50.harvard.edu/python/weeks/5/)<br>
-      [Notes](https://cs50.harvard.edu/python/notes/5/)<br>
+: Introduction to Sofware Engineering
+    : [Slides](/11102-f25/lessons/slides/SE-intro.pdf)<br>
 
 Nov 25
-: Testing (Practice)
-    : Code
+: Testing (Introduction)
+    : [Slides](/11102-f25/lessons/slides/Testing-Intro.pdf)<br>
 
 Nov 27
-: A Software Engineering Primer
-    : Slides
+: Testing (Practice)
+    : [Notes](/11102-f25/lessons/pytest)<br>
 
 HW
 : [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

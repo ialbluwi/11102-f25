@@ -245,7 +245,7 @@ Writing tests forces you to think critically about what you expect from the code
 1. It helps you clarify your requirements and expectations for the code.
 2. It helps you ensure that the generated code meets those expectations.
 
-## Walkthrough Example 1
+## Example 1
 
 Assume that you'd like to use an AI tool to write a function that counts the number of distinct numbers in a list. You might prompt the AI tool as follows:
 
@@ -334,7 +334,7 @@ We can comfortably now move forward knowing that our `count_distinct` function w
 
 A great benefit of having these tests is that if we ever need to modify the function in the future, we can re-run these tests to ensure that our changes do not introduce any new bugs. This is an important aspect of software development, especially when working with large codebases or when multiple developers are involved. In such situations, modifying code can inadvertently break other pieces of the code that depend on it. Having a comprehensive suite of tests helps catch such issues early.
 
-## Walkthrough Example 1
+## Example 2
 
 Let's use an AI tool to write a function that checks if two strings are anagrams of each other. Two strings are anagrams if they contain the same characters in a different order. We might prompt the AI tool as follows:
 
