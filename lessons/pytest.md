@@ -136,10 +136,10 @@ If we execute `test_calculator.py`, we will see an `AssertionError` at the first
 
 ```
 Traceback (most recent call last):
-  File "/Users/ialbluwi/Downloads/test_test.py", line 11, in <module>
+  File "/Users/username/Downloads/test_calculator.py", line 11, in <module>
     test_square()
     ~~~~~~~~~~~^^
-  File "/Users/ialbluwi/Downloads/test_test.py", line 5, in test_square
+  File "/Users/username/Downloads/test_calculator.py", line 5, in test_square
     assert square(3) == 9
 ```
 
@@ -149,7 +149,13 @@ Traceback (most recent call last):
 
 To install and use `pytest` type `pip install pytest` or `pip3 install pytest` into your console window.
 
-In the terminal window, type `pytest test_calculator.py`. You’ll immediately notice that output will be provided. 
+In the terminal window, type: 
+
+```
+pytest test_calculator.py
+``` 
+
+Pytest will run every function in `test_calculator.py` that starts with `test_` or ends with `_test`. You’ll immediately notice that output will be provided. 
 
 <img src="/11102-f25/lessons/images/pytest1.png" class="img-soft" style="display:block; margin: 20px auto;">
 
