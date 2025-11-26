@@ -379,9 +379,9 @@ def are_anagrams(str1, str2):
     return True
 ```
 
-This code is relatively long. The more complex the code, the more important it is to write tests to ensure its correctness.
+This code is relatively long and uses Python syntax we did not cover in class! The more complex the code, the more important it is to write tests to ensure its correctness.
 
-Let's think about how the input strings can vary:
+Without understanding the code, we can design test cases to check if it works as intended or not. Let's think about how the input strings can vary:
 
 1. Length:
     - Both strings are empty.
