@@ -21,6 +21,7 @@ h2 {
 
 
 # Algorithms and Efficiency
+{: .no_toc}
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -61,15 +62,30 @@ The idea is to record the time before and after the code execution, and then cal
 
 ## Appending and Prepending to Lists
 
-Let's compare the running time of two pieces of code, both that generate a list of random numbers. The first code appends numbers to the _end_ of the list, while the second code inserts numbers at the _beginning_ of the list.
+Let's compare the running time of the following two pieces of code: 
+
+```python
+numbers = []
+for _ in range(N):
+    numbers += [randint(1, 100)]
+```
+and
+
+```python
+numbers = []
+for _ in range(N):
+    numbers = [randint(1, 100)] + numbers
+```
+
+Both pieces of code generate a list of random numbers. The first code _appends_ numbers to the _end_ of the list, while the second code _prepends_ numbers at the _beginning_ of the list. The following code measures the running time of both methods:
 
 ```python
 import time
 from random import randint
 
-N = int(input("Number of random numbers: "))
+N = int(input("How many numbers? "))
 
-# Appending to the end of the list
+# Appending
 start = time.time()
 numbers = []
 for _ in range(N):
@@ -77,7 +93,7 @@ for _ in range(N):
 end = time.time()
 print("Appending:", end - start, "seconds")
 
-# Inserting at the beginning of the list
+# Prepending
 start = time.time()
 numbers = []
 for _ in range(N):
@@ -100,19 +116,18 @@ Appending : 0.009379148483276367 seconds
 Prepending: 0.3352389335632324 seconds
 ```
 
-The second method is clearly slower, but still manageable. Let's try with $$N=40000$$, $$N=80000$$, and $$N=160000$$:
+The second method is clearly slower, but still manageable. Let's try with $$N=40000$$, $$N=80000$$, and $$N=160000$$. Here is a summary of the results we get:
 
+**Appending:**
 ```
-Appending:
-----------
 10000    0.005068063735961
 20000    0.009379148483276
 40000    0.018888950347900
 80000    0.037770986557006
 160000   0.067885875701904
-
-Prepending:
-----------
+```
+**Prepending:**
+```
 10000    0.082145929336547
 20000    0.335238933563232
 40000    1.266126155853271
@@ -128,7 +143,7 @@ So, what is going on here? Why is the second method so much slower than the firs
 
 <img src="/11102-f25/lessons/images/dynamic-array.png" class="img-soft" style="display:block; margin: 20px auto;">
 
-- Adding to the beginning of the list is not easy, because there are not empty slots! The operation `numbers = [randint(1, 100)] + numbers` creates _a new list_ and copies all the elements from the original list to the new list with the new element added     at the beginning. 
+- Adding to the beginning of the list is not easy, because there are no empty slots! The operation `numbers = [randint(1, 100)] + numbers` creates _a new list_ and copies all the elements from the original list to the new list with the new element added     at the beginning. 
 
 This means that for each insertion at the beginning, Python has to copy all the existing elements to a new location in memory, which takes a lot of time if there are many elements in the list.
 
@@ -138,8 +153,9 @@ How much time will each method take if we increase $$N$$ to one billion?
 
 Let's take a closer look at the running times we observed for the two methods:
 
+**Appending:**
 ```
-| Size     | Appending | Ratio | 
+| Size     | Time      | Ratio | 
 |----------|-----------|-------|
 | 10,000   | 0.0051s   |  -    | 
 | 20,000   | 0.0094s   | ≈ 1.8 | 
@@ -148,28 +164,29 @@ Let's take a closer look at the running times we observed for the two methods:
 | 160,000  | 0.0679s   | ≈ 1.8 |
 ```
 
-We can see that the running time of the append operatoin roughly doubles when we double the size of the list. This is good! 
+We can see that the running time roughly **doubles** when we double the size of the list. This is good! 
 
 Let's now look at the prepending operation:
 
+**Prepending:**
 ```
-| Size     | Prepending | Ratio |
-|----------|------------|-------|
-| 10,000   | 0.0821s    |  -    |
-| 20,000   | 0.3352s    | ≈ 4   |
-| 40,000   | 1.2661s    | ≈ 3.8 |
-| 80,000   | 4.9503s    | ≈ 3.9 |
-| 160,000  | 19.9714s   | ≈ 4.0 |
+| Size     | Time     | Ratio |
+|----------|----------|-------|
+| 10,000   | 0.0821s  |  -    |
+| 20,000   | 0.3352s  | ≈ 4   |
+| 40,000   | 1.2661s  | ≈ 3.8 |
+| 80,000   | 4.9503s  | ≈ 3.9 |
+| 160,000  | 19.971s  | ≈ 4.0 |
 ```
 
-We can see that the running time of the prepend operation roughly quadruples when we double the size of the list. This is bad!
+We can see that the running time roughly **quadruples** (is multipled by ≈ 4) when we double the size of the list. This is bad!
 
 From these observations, we can make a rough prediction of the running time for larger sizes. For example, if we want to estimate the time for $$N=320,000$$:
 
 - **Appending**: We can expect the time to be around $$0.0679s \times 2 ≈ 0.1372$$ seconds.
 - **Prepending**: We can expect the time to be around $$19.9714s \times 4 ≈ 79.8856s ≈ 1.33$$ minutes.
 
-We definitely do not want to run the program for one billion numbers. If takes a minute for $$160,000$$ numbers, who knows how long it will take for one billion!
+We definitely do not want to run the program for one billion numbers. If takes around a minute for $$160,000$$ numbers, who knows how long it will take for one billion!
 
 Instead, we will download and use [time_plot.py](/11102-f25/lessons/code/time_plot.py), which allows making time predictions based on previous running times. Using the tool, we get the following predictions for $$N=1,000,000,000$$:
 
@@ -180,7 +197,15 @@ You have seen it right! The prepend operation will take almost two decades to fi
 
 ## Fixing The Problem
 
-Another way to achieve the same effect of prepending to a list is to create a new list of size $$N$$, and then fill it from the end to the beginning. Here is the code:
+Another way to achieve the same effect of prepending to a list is to create a new list of size $$N$$, and then fill it from the end to the beginning (backwards). Here is the code:
+
+```python
+numbers = [0] * N
+for i in range(N):
+    numbers[N - 1 - i] = randint(1, 100)
+```
+
+Let's time this code for different values of $$N$$:
 
 ```python
 import time
@@ -213,7 +238,7 @@ Now, the running times are comparable to the append operation. This is because w
 
 ## Removing All Occurrences of An Element
 
-Here is another example that illustrates the importance of algorithm efficiency. 
+Let's see another example that illustrates the importance of algorithm efficiency. 
 
 Suppose we want to remove all occurrences of a value `x` from a list named `nums`. Here is a simple implementation:
 
@@ -258,11 +283,24 @@ Running this code and computing the ratios gives the following results:
 
 These results exhibit the same dreaded quadrupling behavior we saw earlier! Moving from $$80,000$$ to $$160,000$$ takes us from about $$6.1$$ seconds to about $$25.1$$ seconds. This is clearly inefficient and is expected to take years for one billion elements.
 
-Why is this code so inefficient? The reason is two fold:
+Why is this code so inefficient? The reason is twofold:
 1. In each iteration of the `while` loop, we use the `in` operator to check if `x` is in the list. This requires scanning the entire list.
-2. If `x` is found, we use the `remove` method to remove the first occurrence of `x`. This also requires scanning the list to find `x`, and then shifting all subsequent elements to fill the gap.
+2. If `x` is found, we use the `remove` method to remove the first occurrence of `x`. This also requires scanning the list to find `x`, and then shifting all subsequent elements to fill the gap caused by removing `x`.
 
 To fix this problem, we can use a similar approach to the one we used for prepending. We can create a new list and copy only the elements that are not equal to `x`. Here is the code:
+
+```python
+# copy all elements that are not x to a new list
+result = []
+for num in numbers:
+    if num != x:
+        result.append(num)
+
+# assign the new list back to numbers
+numbers = result
+```
+
+Here is the complete timing code with this modified method:
 
 ```python
 import time
@@ -275,20 +313,19 @@ for N in [10000, 20000, 40000, 80000, 160000]:
         numbers.append(randint(1, 10))
     x = randint(1, 10)
 
-    # ---- MODIFIED METHOD TO REMOVE ALL OCCURRENCES OF x ----
+    # Remove all occurrences of x
     start = time.time()
-
     result = []
     for num in numbers:
         if num != x:
             result.append(num)
     numbers = result
-
     end = time.time()
+
     print(N, '\t', end - start, 'seconds')
 ```
 
-Running this code gives the following results (table formatted like the previous ones):
+Running this code gives the following results:
 
 ```
 |  N     |  Time (seconds) | Ratio  |
@@ -340,11 +377,15 @@ for N in [10000, 20000, 40000, 80000, 160000]:
 | 160000 | 87.21093606948 | ≈ 4.56 |
 ```
 
-Can you think of a more efficient way to count the number of distinct elements in a list? Here is an observation that can help us:
+Can you think of a more efficient way to count the number of distinct elements in a list? Here is an observation that can help:
 
-If we sort the list first, then all occurrences of the same element will be adjacent to each other. For example, the list $$[3,\ 1,\ 4,\ 2,\ 3,\ 1]$$ becomes $$[1,\ 1,\ 2,\ 3,\ 3,\ 4]$$ after sorting. 
+> _If we sort the list first, then all occurrences of the same element will be adjacent to each other. For example, the list $$[3,\ 5,\ 8,\ 5,\ 3,\ 5,\ 8,\ 5,\ 5,\ 8,\ 8]$$ becomes $$[3, 3,\ 5, 5, 5, 5, 5,\ 8, 8, 8, 8]$$ after sorting._
 
-Since the same elements are adjacent, we can simply iterate through the sorted list and count how many times we encounter a new element. Here is the modified code:
+Since equal elements are adjacent, we can simply iterate through the sorted list and count how many times we encounter a new element. 
+
+<img src="/11102-f25/lessons/images/distinct.png" class="img-soft" style="display:block; margin: 20px auto;">
+
+Here is the modified code:
 
 ```python
 def count_distinct(numbers):
@@ -371,7 +412,7 @@ Running the same timing code with this modified function gives us the following 
 | 160000 | 0.038151979446 | ≈ 1.83 |
 ```
 
-This is lightning fast compared to the previous implementation!
+This is lightning fast compared to the previous implementation! The quaderupling behavior is gone, and the running time roughly doubles when we double the size of the list.
 
 ## Sum of Squares
 
@@ -428,10 +469,10 @@ for c in [10000, 20000, 40000, 80000, 160000]:
     print(c, '\t', end - start, 'seconds')
 ```
 
-We should expect the running time to be different based on whether $$c$$ has such a pair $$(a, b)$$ or not. If such a pair is found early, the function will return quickly. However, if no such pair exists, the function will have to check all possible pairs.
+We should expect the running time to be different based on whether $$c = a^2 + b^2$$ for some pair $$(a, b)$$ or not. If such a pair is found early, the function will return quickly. However, if no such pair exists, the function will have to check all possible pairs.
 
 ```
-|  c      | Time (seconds) | Ratio   |
+|  c     | Time (seconds) | Ratio   |
 |--------|----------------|---------|
 | 10000  | 0.022106170654 | -       |
 | 20000  | 0.028832197189 | ≈ 1.30  |
@@ -452,9 +493,11 @@ Indeed, we see that the running time varies significantly based on the input val
 | 15999  | 19.48631334304 | ≈ 4.15  |
 ``` 
 
-The dreaded quadrupling behavior is back again! This is because the if $c = 999$, our code has to check $$998 \times 998 = 996004$$ pairs of $$(a, b)$$. However, is this really necessary?
+The dreaded quadrupling behavior is back again! This is because the if $$c = 999$$, our code has to check $$998 \times 998 = 996004$$ pairs of $$(a, b)$$. However, is this really necessary?
 
-Let's improve our algorithm. The first thing to notice is that we are checking pairs $$(a, b)$$ and $$(b, a)$$ separately, even though they yield the same result. Therefore, we can modify our code to only check pairs where $$a \leq b$$:
+Let's improve our algorithm. The first thing to notice is that we are checking pairs $$(a, b)$$ and $$(b, a)$$ separately, even though they yield the same result. For example, why check $$1^2 + 2^2$$ and $$2^2 + 1^2$$? They have the same sum, so checking only one is enough. 
+
+We can modify our code to only check pairs where $$b \geq a$$:
 
 ```python
 def check(c):
@@ -477,17 +520,23 @@ $$1^2 + 3^2$$
 
 ---
 
+$$\color{red}\cancel{2^2 + 1^2}$$
+
 $$2^2 + 2^2$$
 
 $$2^2 + 3^2$$
 
 ---
 
+$$\color{red}\cancel{3^2 + 1^2}$$
+
+$$\color{red}\cancel{3^2 + 2^2}$$
+
 $$3^2 + 3^2$$
 
 ---
 
-Clearly, we got rid of many redundant checks. Let's time this modified code to see how much of an improvement we get:
+Clearly, this will get rid of many redundant checks. Let's time this modified code to see how much of an improvement we get:
 
 ```
 |  c     | Time (seconds) | Ratio   |
@@ -499,9 +548,13 @@ Clearly, we got rid of many redundant checks. Let's time this modified code to s
 | 15999  | 8.727083921432 | ≈ 3.92  |
 ```
 
-While the running times cut in half compared to the previous implementation, we still see the dreaded quadrupling behavior. Can we do better?
+While the running times are cut in half compared to the previous implementation, we still see the dreaded quadrupling behavior. Can we do better?
 
-Yes! No number above $$\sqrt{c}$$ can be part of a valid pair $$(a, b)$$. If $$a > \sqrt{c}$$, then $$a^2 + b^2 > c$$. Therefore, we can modify our code to only check values of $$a$$ and $$b$$ up to $$\sqrt{c}$$:
+Yes! Note the following:
+
+> _No number above $$\sqrt{c}$$ can be part of a valid pair $$(a, b)$$._
+
+If $$a > \sqrt{c}$$, then $$a^2 + b^2 > c$$. Therefore, we can modify our code to only check values of $$a$$ and $$b$$ up to $$\sqrt{c}$$:
 
 ```python
 def check(c):
@@ -525,7 +578,7 @@ Let's time this modified code:
 | 15999  | 0.00054407119751 | ≈ 2.00 |
 ```
 
-This is lightning fast compared to the previous implementations and the running time roughly doubles when we double the value of $$c$$, which is what we want!
+This is lightning fast compared to the previous implementations and the running time roughly doubles when we double the value of $$c$$. This is exactly what we want!
 
 ## Summary
 
