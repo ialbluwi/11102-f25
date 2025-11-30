@@ -1,12 +1,10 @@
 ---
 title: <b>Week 9</b> (Midterms + Algorithms)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Dec 1
-: TBA
-  : TBA
+: Program Efficiency
+  : [Notes](/11102-F25/lessons/efficiency)
 
 Dec 3
-: TBA
-  : TBA
+: No Lecture

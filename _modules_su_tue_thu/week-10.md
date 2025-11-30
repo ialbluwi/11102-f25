@@ -1,5 +1,6 @@
 ---
 title: <b>Week 10</b> (Data Representation)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Dec 7

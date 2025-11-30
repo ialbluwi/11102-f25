@@ -1,16 +1,14 @@
 ---
 title: <b>Week 9</b> (Midterms + Algorithms)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Nov 30
-: One problem, Many solutions!
-    : Code
+: Program Efficiency
+    : [Notes](/11102-f25/lessons/efficiency/)
 
 Dec 2
-: Experimental Analysis
-    : Code
+: Program Efficiency
+    : [Notes](/11102-f25/lessons/efficiency/)
 
 Dec 4
-: Counting Operations
-    : Code
+: Review
