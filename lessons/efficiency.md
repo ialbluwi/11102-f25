@@ -120,6 +120,8 @@ The second method is clearly slower, but still manageable. Let's try with $$N=40
 
 **Appending:**
 ```
+Size     Time (seconds)
+---------------------------
 10000    0.005068063735961
 20000    0.009379148483276
 40000    0.018888950347900
@@ -128,6 +130,8 @@ The second method is clearly slower, but still manageable. Let's try with $$N=40
 ```
 **Prepending:**
 ```
+Size     Time (seconds)
+---------------------------
 10000    0.082145929336547
 20000    0.335238933563232
 40000    1.266126155853271

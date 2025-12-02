@@ -161,7 +161,7 @@ current_max = None
 for i in range(10):
     num = int(input())
 
-    if current_max == None or current_max > result:
+    if current_max == None or num > current_max:
         current_max = num
 
 print("Max = ", current_max)
