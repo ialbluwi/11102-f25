@@ -1,5 +1,6 @@
 ---
 title: <b>Week 11</b> (Security)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Dec 14

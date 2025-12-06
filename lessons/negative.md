@@ -224,4 +224,3 @@ This shows that two's complement representation allows for straightforward binar
     </iframe>
 </div>
 
-
