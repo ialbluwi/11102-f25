@@ -25,7 +25,7 @@ def verify_password(password, stored_salt, stored_hash):
     # Compare with stored hash
     return hashed_password == stored_hash
 
-# Example usage (no _main_ guard for inclusion in Jekyll site):
+# Example usage:
 password1 = "mypassword"
 salt, password_hash = create_password_hash(password1)
 print("Salt: ", salt)
