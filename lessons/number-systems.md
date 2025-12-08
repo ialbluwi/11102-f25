@@ -245,7 +245,9 @@ Reading the binary digits gives us `0011 1010 1111`. Therefore, `3AF` in hexadec
 
 ---
 
-## Fun With Python
+## Fun With Number systems
+
+### Using Python for Conversions
 
 Open a Python interactive shell (REPL) and type the following statmeents:
 
@@ -268,6 +270,12 @@ int('345', 8)          # 229
 When using the `int()` function to convert from other number systems to decimal, you need to specify the base as the second argument.
 
 ---
+
+### Practice With Games!
+
+Here is a fun game to practice converting between number systems: 
+- [Binary Game](https://learningcontent.cisco.com/games/binary/index.html)
+- [Hexadecimal Game](https://flippybitandtheattackofthehexadecimalsfrombase16.com/)
 
 ## Why Learn About Number Systems?
 
