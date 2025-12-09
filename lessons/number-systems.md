@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Dec 6
+title:  Dec 7
 nav_exclude: true
 author: Ibrahim Albluwi
 ---
@@ -49,16 +49,15 @@ We can represent numbers in different ways. Here examples:
 
 - **Binary** (Base 2): This number system uses only two digits: `0` and `1`. Each digit's position represents a power of `2`. For example, The number `101101` in binary represents: 
 
-$$ (1\times2^5) + (0\times2^4) + (1\times2^3) + (1\times2^2) + (0\times2^1) + (1\times2^0) = 32 + 0 + 8 + 4 + 0 + 1 = 45 $$
-
 <img src="/11102-f25/lessons/images/binary.png" class="img-soft" style="display:block; margin: 20px auto;">
 
+$$ (1\times2^5) + (0\times2^4) + (1\times2^3) + (1\times2^2) + (0\times2^1) + (1\times2^0) = 32 + 0 + 8 + 4 + 0 + 1 = 45 $$
 
 - **Hexadecimal** (Base 16): This number system uses sixteen digits: `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F`, where `A` to `F` represent the decimal values `10` to `15`. Each digit's position represents a power of `16`. For example, The number `2E3F` in hexadecimal represents:
 
-$$ (2\times16^3) + (14\times16^2) + (3\times16^1) + (15\times16^0) = 8192 + 3584 + 48 + 15 = 11839 $$
-
 <img src="/11102-f25/lessons/images/hexadecimal.png" class="img-soft" style="display:block; margin: 20px auto; width: 65%;">
+
+$$ (2\times16^3) + (14\times16^2) + (3\times16^1) + (15\times16^0) = 8192 + 3584 + 48 + 15 = 11839 $$
 
 - **Octal** (Base 8): This number system uses eight digits: `0, 1, 2, 3, 4, 5, 6, 7`. Each digit's position represents a power of `8`. For example, The number `345` in octal represents:
 
@@ -189,6 +188,11 @@ Group the binary digits into sets of three (starting from the right) and convert
     - `111` (binary) = 7 (octal)
     - `011` (binary) = 3 (octal)
 
+```
+     Octal:    2     7     3
+    Binary:   010   111   011
+```
+
 Reading the octal digits gives us `273`. Therefore, `10111011` in binary is `273` in octal.
 
 ---
@@ -196,12 +200,18 @@ Reading the octal digits gives us `273`. Therefore, `10111011` in binary is `273
 ### Octal to Binary: 
 Convert each octal digit to its three-digit binary equivalent.
 
-**Example:** Convert `42` to binary.
+**Example:** Convert `427` to binary.
 
 - `4` (octal) = `100` (binary)
 - `2` (octal) = `010` (binary)
+- `7` (octal) = `111` (binary)
 
-Reading the binary digits gives us `100 010`. Therefore, `42` in octal is `100010` in binary.
+```
+Octal:        4     2     7
+    Binary:   100   010   111
+```
+
+Reading the binary digits gives us `100 010 111`. Therefore, `427` in octal is `100010111` in binary.
 
 ---
 
@@ -216,6 +226,11 @@ Group the binary digits into sets of four (starting from the right) and convert 
     - `1100` (binary) = `C` (hexadecimal)
     - `1010` (binary) = `A` (hexadecimal)
 
+```
+Hexadecimal:    3     5     C     A
+    Binary:     11  0101  1100  1010
+```
+
 Reading the hexadecimal digits gives us `35CA`. Therefore, `11010111001010` in binary is `35CA` in hexadecimal.
 
 ---
@@ -228,9 +243,16 @@ Convert each hexadecimal digit to its four-digit binary equivalent.
 - `A` (hexadecimal) = `1010` (binary)
 - `F` (hexadecimal) = `1111` (binary)
 
+```
+Hexadecimal:      3     A     F
+    Binary:     0011  1010  1111
+```
+
 Reading the binary digits gives us `0011 1010 1111`. Therefore, `3AF` in hexadecimal is `001110101111` in binary.
 
 ---
+
+Here is a video summary of the conversions between binary and hexadecimal:
 
 <div class="video-container">
     <iframe 
@@ -242,6 +264,12 @@ Reading the binary digits gives us `0011 1010 1111`. Therefore, `3AF` in hexadec
         allowfullscreen>
     </iframe>
 </div>
+
+---
+
+Having the following table ready might help with conversions:
+
+<img src="/11102-f25/lessons/images/hex.png" class="img-soft" style="display:block; margin: 20px auto; width: 45%;">
 
 ---
 
@@ -273,7 +301,7 @@ When using the `int()` function to convert from other number systems to decimal,
 
 ### Practice With Games!
 
-Here is a fun game to practice converting between number systems: 
+Here are two fun games to practice converting between number systems: 
 - [Binary Game](https://learningcontent.cisco.com/games/binary/index.html)
 - [Hexadecimal Game](https://flippybitandtheattackofthehexadecimalsfrombase16.com/)
 

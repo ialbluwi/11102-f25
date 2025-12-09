@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Dec 8
+title:  Dec 9
 nav_exclude: true
 author: Ibrahim Albluwi
 ---
@@ -82,7 +82,7 @@ As you can see, each additional bit doubles the number of possible values. There
 
 ### How many bits are needed?
 
-Let's consdier the following bits and their possible values:
+Let's consdier the following number of bits and their range of possible values:
 
 ```
 # of Bits    Range of Possible Values
