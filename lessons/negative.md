@@ -64,16 +64,16 @@ This method is called **sign-magnitude representation**. Here is an example tabl
 
 As you can see, this representation has two representations for zero: `000` (+0) and `100` (-0). This is not ideal!
 
-Another major issue with sign-magnitude representation is that arithmetic operations (like addition and subtraction) do not work as expected. Here is an exampple for adding `+3` and `-2` using 4-bit sign-magnitude representation:
+Another major issue with sign-magnitude representation is that arithmetic operations (like addition and subtraction) do not work as expected. Here is an exampple for adding `+5` and `-2` using 4-bit sign-magnitude representation:
 
 ```
-  +3 in sign-magnitude:  0011
-  -2 in sign-magnitude:  1100 +
+  +5 in sign-magnitude:  0101
+  -2 in sign-magnitude:  1010 +
                          ----
-                         1111  (which is -3 in sign-magnitude)
+                         1111  (which is -7 in sign-magnitude)
 ```
 
-The expected result is `+1`, but we got `-3` instead! Hence, sign-magnitude representation is not commonly used in computers.
+The correct answer should be `+3`, but we got `-7` instead! You can try other examples and see that addition and subtraction do not work correctly in sign-magnitude representation.
 
 ## Two's Complement Representation
 
