@@ -116,6 +116,7 @@ If you take any number in the table above, flipt all its bits and add `1`, you w
 
 ```
     +5 in two's complement:  0101
+    
     Flip bits:               1010
     Add 1:                  +0001
                              -----
