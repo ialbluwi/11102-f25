@@ -108,11 +108,6 @@ Passwords that are easy to remember often follow common patterns or use common w
 >
 > **A Dictionary Attack** is an attempt to guess the password based on a predefined list of strings. The list can contain English words (hence the name _dictionary_), common strings found in passwords (e.g., `password`, `1234`), or actual passwords collected from previous breaches. The attacker typically uses software to create variations of the strings in the dictionary (e.g., appending a number or a special character).
 
-{: .important-title }
-> 📖 Definition
->
-> **A Rainbow Table** is a dictionary, where the strings (e.g., the common passwords) are not stored in plaintext, but are stored after being encrypted using one of the encryption methods commonly used for passwords. This can speed up the dictionary attack, as the the attacker only has to search for the encrypted string, instead of encrypting it before searching.
-
 {: .highlight-title }
 > 🔗 **OPTIONAL LINK**
 >
