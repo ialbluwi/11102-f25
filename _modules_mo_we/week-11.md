@@ -1,15 +1,14 @@
 ---
 title: <b>Week 11</b> (Security)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Dec 15
-: TBA
-  : TBA
+: Encryption
+    : [Notes](/11102-f25/lessons/encryption/)
 
 Dec 17
-: TBA
-  : TBA
-
+: passwords
+    : [Notes](/11102-f25/lessons/passwords/)
+    
 HW
 : [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)

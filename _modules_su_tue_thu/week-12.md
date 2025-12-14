@@ -1,5 +1,6 @@
 ---
 title: <b>Week 12</b> (Images & Animation)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Dec 21
