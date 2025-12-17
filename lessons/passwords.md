@@ -61,9 +61,9 @@ different possible passwords made of 6 lowercase letters. This might sound safe.
 
 ### Brute-Force Attacks
 
-Imagine if the password database of your website was leaked and the attacker had access to it ([this could happen even with top websites!](https://www.mcafee.com/blogs/internet-security/26-billion-records-released-the-mother-of-all-breaches/)). Typically, websites store passwords **encrypted**. Hence, your password should still be unreadable by the attacker. However, the attacker now has an easy way to crack your password!
+Imagine if the password database of your website was leaked and the attacker had access to it ([this could happen even with top websites!](https://www.mcafee.com/blogs/internet-security/26-billion-records-released-the-mother-of-all-breaches/)). Typically, websites store passwords **hashed** (i.e., transformed to an unreadable format as will be explained later). Hence, your password should still be unreadable by the attacker. However, the attacker now has an easy way to crack your password!
 
-Knowing your encrypted password, they can try to encrypt the $$308,915,776$$ possible passwords and see if any match your encrypted password. This can be done on a laptop in a matter of hours, and on a stronger computer with multiple GPUs in a matter of seconds or less!
+Knowing your hashed password, they can try to hash the $$308,915,776$$ possible passwords and see if any match your hashed password. This can be done on a laptop in a matter of hours, and on a stronger computer with multiple GPUs in a matter of seconds or less!
 
 ### Protecting Your Password
 
@@ -88,7 +88,7 @@ Most websites currently require passwords to be at least 8 characters long, and 
 >
 > $$(26 + 26 + 10 + 32)^8 = 6,095,689,400,000,000\approx 6 \textrm{ quadrillion}$$
 
-Adding such requirements makes it practically impossible even for the fastest computers to crack the password using brute-force attacks.
+Adding such requirements can make it practically impossible even for the fastest computers to crack the password using naive brute-force attacks.
 
 {: .highlight-title }
 > 🔗 **LINK**
@@ -101,7 +101,7 @@ While the above requirements make passwords more secure, they also make them har
 
 ### Dictionary Attacks
 
-Passwords that are easy to remember often follow common patterns or use common words. Therefore, attackers try to exploit this by using a predefined list of common passwords (a _dictionary_). Instead of trying all possible combinations of characters, they try to encrypt each password from the dictionary and see if it matches the encrypted password they are trying to crack. This can be much faster than brute-force attacks, and surprisingly effective!
+Passwords that are easy to remember often follow common patterns or use common words. Therefore, attackers try to exploit this by using a predefined list of common passwords (a _dictionary_). Instead of trying all possible combinations of characters, they try to hash each password from the dictionary and see if it matches the hashed password they are trying to crack. This can be much faster than brute-force attacks, and surprisingly effective!
 
 {: .important-title }
 > 📖 Definition
@@ -117,17 +117,17 @@ Passwords that are easy to remember often follow common patterns or use common w
 
 ## Storing Passwords
 
-No sane application stores its users' passwords in plaintext. Not even the application administrators should be able to read such sensitive information. Let alone the possibility of hackers getting unauthorized access to the files storing these passwords. The minimum that should be done is to store the passwords in some encrypted format.
+No sane application stores its users' passwords in plaintext. Not even the application administrators should be able to read such sensitive information. Let alone the possibility of hackers getting unauthorized access to the files storing these passwords. The minimum that should be done is to store the passwords in some hashed format.
 
 How can the application authorize users if they don't know their passwords?
 
 The typical procedure is as follows:
-1. When a user creates an account or changes their password, the application encrypts the password and stores it.
-2. When the user tries to log in, the application encrypts the password they provide and compares it to the stored encrypted version. If they match, the user is authorized.
+1. When a user creates an account or changes their password, the application hashes the password and stores it.
+2. When the user tries to log in, the application hashes the password they provide and compares it to the stored hashed version. If they match, the user is authorized.
 
 ### Hashing Passwords
 
-For the above procedure to be secure, passwords must be encrypted using a **one-way** method that does **not** allow recovering the original password from its encrypted version. For example, the application should not use an encryption method like _one-time pads_, because given the encrypted password and the key, it is possible to recover the original password.
+For the above procedure to be secure, passwords must undergo a **one-way** transformation method that does **not** allow recovering the original password. For example, the application should not use an encryption method like _one-time pads_, because given the encrypted password and the key, it is possible to recover the original password.
 
 For storing passwords, **cryptographic hashing** is typically used. A cryptographic hash function takes an input (in our case, the password) and produces a fixed-size string of characters, which appears random. There is no key involved in this process and it is computationally infeasible to reverse the process (i.e., to recover the original password from its hashed version). 
 
@@ -177,8 +177,8 @@ Some cryptographic hash functions (like `SHA256`) are very fast. While this migh
 ## Summary
 
 Here is a summary of best practices for storing passwords securely:
-1. Store passwords encrypted.
-2. Use a one-way hash function for encryption.
+1. Store passwords hashed.
+2. Use a one-way hash function for hashing.
 3. Use a unique salt for each password before hashing.
 4. Use a slow hash function designed for password storage (e.g., bcrypt, scrypt).
 
@@ -187,5 +187,3 @@ Here is a summary of best practices for storing passwords securely:
 >
 > The following video summarizes nicely how passwords should be stored:
 > [Studying With Alex: Password Storage Tier List](https://www.youtube.com/watch?v=qgpsIBLvrGY&ab_channel=StudyingWithAlex)
-
-

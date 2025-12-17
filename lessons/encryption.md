@@ -65,7 +65,7 @@ Imagine some of your sensitive information (like your password or credit card nu
 
 2. In 2018, [Marriott International disclosed](https://consumer.ftc.gov/consumer-alerts/2018/12/marriott-data-breach) a data breach affecting 500 million guests. Hackers stole sensitive data like: passport numbers, phone numbers, credit card information, and reservation details. Marriott was fined $24 million by the UK Information Commissioner’s Office (ICO) for failing to meet cybersecurity standards.
 
-[This website](https://informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/) provides a nice visualization of major data breaches over the years. You will notice that major entities like Facebook, Microsoft, and the China Government have all been involved in significant data breaches, and that breaches continue to occur frequently.
+[This website](https://informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/) provides a nice visualization of major data breaches over the years. You will notice that major entities like Facebook, Microsoft, and the Chinese Government have all been involved in significant data breaches, and that breaches continue to occur frequently.
 
 ### Availability
 
@@ -267,7 +267,7 @@ Let's assume that you liked to use one-time pads for sending messages to your fr
 
 This is known as the **key distribution problem**. If you can securely share the key, then you can simply share the message itself without encryption. However, if you cannot securely share the key, then the one-time pad is useless.
 
-This problem is common to all encryption techniques that require a shared secret key. Net, we will explore some techniques to solve the key distribution problem.
+This problem is common to all encryption techniques that require a shared secret key. Next, we will explore some techniques to solve the key distribution problem.
 
 ## Public Key Cryptography
 
@@ -318,26 +318,35 @@ This key is the public key of `portal.psut.edu.jo`. Your browser uses this publi
 
 ### Message Integrity
 
-Alice wants to send a message to Bob. She does not care aout confidentiality, but she wants to ensure that Bob knows the message is really from her and has not been altered on the way to him by an attacker. What can she do?
+Alice wants to send a message to Bob. She does not care about confidentiality, but she wants to ensure that Bob knows the message is really from her and has not been altered on the way to him by an attacker. What can she do?
 
-Alice can encrypt the messag with her **private** key. Anyone who receives the message can decrypt it using Alice's **public** key. If the decryption is successful, Bob can be sure that the message was indeed sent by Alice (since only Alice has her private key) and that it has not been altered (since any change to the message would result in a failed decryption).
+Alice can encrypt (sign) the message with her **private** key. Anyone who receives the message can decrypt (verify) it using Alice's **public** key. If the decryption is successful, Bob can be sure that the message was indeed sent by Alice (since only Alice has her private key) and that it has not been altered (since any change to the message would result in a failed decryption).
+
+>{: .warning-title }
+> ⚠️ **Important Note**
+>
+> The above discussion is a simplified explanation to illustrate the basic concepts. In practice, integrity is not achieved by simply encrypting with the private key. Instead, techniques like digital signatures and hash functions are used to ensure message integrity and authenticity.
 
 ### Putting It All Together
 
 Alice can combine both confidentiality and integrity by doing the following:
 
 1. Encrypt the message with Bob's public key.
-2. Encrypt the resulting ciphertext with her private key.
+2. Encrypt (sign) the resulting ciphertext with her private key.
 
 When Bob receives the message, he can do the following:
-1. Decrypt the message with Alice's public key.
+1. Decrypt (verify) the message with Alice's public key.
 2. Decrypt the resulting ciphertext with his private key.
 
 This way, Bob can be sure that the message is confidential (only he can read it) and that it is authentic (it was sent by Alice and has not been altered).
+
+>{: .warning-title }
+> ⚠️ **Important Note**
+>
+> Again, the above is an oversimplified explanation to illustrate the basic concepts.
 
 ### A Note on Speed
 
 Public key cryptography is computationally intensive and slower than encryption methods that use shared secret keys (like the one-time pad). They use complex mathematical operations that require more processing power.
 
 In practice, public key cryptography is used not for encrypting large messages directly, but rather for securely exchanging a short shared secret key. Once both parties have established the shared secret key using public key cryptography, they can use faster encryption methods to encrypt and decrypt their messages using the shared secret key.
-
