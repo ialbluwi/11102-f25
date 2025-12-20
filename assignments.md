@@ -22,4 +22,8 @@ description: Description of the course assignments.
 
 # Assignment 3
 
-Stay tuned!
+- **Topic**: GitHub and GitHub Desktop.
+- **Deadline**: January 17th, 2025 @ 11:59 PM. 
+- **Submission**: Through Ed.
+- **Details**: Announced on Ed.
+- **Weight**: 3%
