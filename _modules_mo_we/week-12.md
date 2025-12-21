@@ -1,12 +1,13 @@
 ---
 title: <b>Week 12</b> (Images & Animation)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Dec 22
-: TBA + [**Quiz # 2**{:.label .label-red }](#)
-  : TBA
+: Images & Colors + [**Quiz # 2**{:.label .label-red }](#)
+  : [Notes](/11102-f25/lessons/images)
 
 Dec 24
-: TBA
-  : TBA
+: Image Manipulation & Animation
+  : [Notes](/11102-f25/lessons/images-python)
+
+  

@@ -1,14 +1,15 @@
 ---
 title: <b>Week 12</b> (Images & Animation)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Dec 21
-: Image Manipulation + [**Quiz # 2**{:.label .label-red }](#)
+: Colors & Image + [**Quiz # 2**{:.label .label-red }](#)
+  : [Notes](/11102-f25/lessons/images)
 
 
 Dec 23
-: Animation
+: Image Manipulation & Animation
+  : [Notes](/11102-f25/lessons/images-python)
 
 Dec 25
 : <span style="background:#333;color:#fff;font-weight:700;padding:0.1em 0.6em;border-radius:6px;display:inline-block;font-size:0.8em;">

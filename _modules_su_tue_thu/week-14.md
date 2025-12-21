@@ -1,5 +1,6 @@
 ---
 title: <b>Week 14</b> (AI)
+note: "⚠️ Note: Schedule below not yet updated for this semester"
 ---
 
 Jan 4
