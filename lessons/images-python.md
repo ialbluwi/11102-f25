@@ -338,4 +338,5 @@ Here is the resulting animation:
 <img src="/11102-f25/lessons/images/mystery_animation.gif" class="img-soft" style="display:block; margin: 20px auto; width:50%"/>
 
 **Exercise**: Try with different images to see how the effect changes. Make sure the images are of the same size, or resize them before using them in the animation.
+
 **Exercise**: Modify the code to create a vertical transition instead of a horizontal one.
