@@ -209,7 +209,7 @@ image.save('grayscale_image.jpg')
 
 Let's define a function that receives an image and a brightness factor, and returns a new image with increased brightness. 
 
-To change the brightness of an image, we need to change the R, G, and B values of each pixel by multiplying them with the same factor. For example, if the factor is `0.5`, the RGB values will be halved, making the image darker. If the factor is `2.0`, the RGB values will be doubled, making the image brighter. However, we need to ensure that the RGB values do not exceed `255`, as this is the maximum value for each channel.
+To change the brightness of an image, we need to change the R, G, and B values of each pixel by multiplying them with the same factor. For example, if the factor is `0.5`, the RGB values will be halved, making the image darker. If the factor is `2.0`, the RGB values will be doubled, making the image brighter. If the resulting value exceeds `255`, Pillow will automatically make it `255`.
 
 ```python
 from PIL import Image
@@ -227,11 +227,6 @@ def change_brightness(image, factor):
             r = int(r * factor)
             g = int(g * factor)
             b = int(b * factor)
-
-            # change to 255 if exceeds 
-            r = min(r, 255)
-            g = min(g, 255)
-            b = min(b, 255)
 
             pixels[i, j] = (r, g, b)
             
