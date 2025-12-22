@@ -263,8 +263,8 @@ from PIL import Image
 image = Image.open('wikipedia-balls.jpg')
 
 frames = []
-for factor in range(0, 101):
-    frame = change_brightness(image, factor / 100)
+for i in range(101):
+    frame = change_brightness(image, i / 100)
     frames.append(frame)
 
 frames[0].save('fade_in_animation.gif',
