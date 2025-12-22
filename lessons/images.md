@@ -173,6 +173,6 @@ The following link is to an interactive demo, showing how images are made of pix
 
 ### Image Quality
 
-The quality of a digital image depends on two main factors: **resolution** and **color depth**. Resolution refers to the number of pixels in the image (e.g., 1920x1080 pixels). Both, how many pixels are used to represent the image and how many colors each pixel can display, affect the overall quality and fidelity of the image. The more, the better! However, higher resolution and color depth also require more storage space.
+The quality of a digital image depends on two main factors: **resolution** and **color depth**. Resolution refers to the number of pixels in the image (e.g., 1920x1080 pixels). Both, how many pixels are used to represent the image and how many colors each pixel can display, affect the overall quality of the image. The more, the better! However, higher resolution and color depth also require more storage space.
 
 
