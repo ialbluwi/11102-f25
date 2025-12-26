@@ -160,10 +160,10 @@ image = Image.open('wikipedia-balls.jpg')
 pixels = image.load()  # Create the pixel map
 
 # Iterate through each pixel
-for i in range(image.width):
-    for j in range(image.height):
-        r, g, b = pixels[i, j]  # Get the RGB values
-        pixels[i, j] = (0, g, b)  # Set the red channel to 0
+for x in range(image.width):
+    for y in range(image.height):
+        r, g, b = pixels[x, y]  # Get the RGB values
+        pixels[x, y] = (0, g, b)  # Set the red channel to 0
 
 # Save the modified image
 image.save('no_red_channel.jpg')
@@ -172,9 +172,10 @@ image.save('no_red_channel.jpg')
 {: .important-title }
 > **Notes**.
 >
-> The above code uses `pixels[i, j] = (0, g, b)` to set the pixel color. Note the following:
+> The above code uses `pixels[x, y] = (0, g, b)` to set the pixel color. Note the following:
 > - The brackets `( )` around the values are important, as they create a **tuple** in Python. A tuple is similar to a list, but it is immutable (cannot be changed).
-> - We used `pixels[i, j]` to access the pixel at position `(i, j)`. This a special syntax provided by the Pillow library to access pixel values directly. Do not confuse it with regular Python lists where you would use `pixels[i][j]`.
+> - We used `pixels[x, y]` to access the pixel at position `(x, y)`. This a special syntax provided by the Pillow library. Do not confuse it with regular Python lists where you would use `pixels[x][y]`.
+> - In a 2D list, `[x][y]` means row `x` and column `y`, but in Pillow's pixel access, `[x, y]` means column `x` and row `y`. Don't get confused!
 
 The result should look like this:
 
@@ -194,11 +195,11 @@ from PIL import Image
 image = Image.open('wikipedia-balls.jpg')
 pixels = image.load()
 
-for i in range(image.width):
-    for j in range(image.height):
-        r, g, b = pixels[i, j]
+for x in range(image.width):
+    for y in range(image.height):
+        r, g, b = pixels[x, y]
         gray = int((r + g + b) / 3)  # Calculate the average
-        pixels[i, j] = (gray, gray, gray)  # Set to grayscale
+        pixels[x, y] = (gray, gray, gray)  # Set to grayscale
 
 image.save('grayscale_image.jpg')
 ```
@@ -219,16 +220,16 @@ def change_brightness(image, factor):
     result = image.copy()
 
     pixels = result.load()  
-    for i in range(result.width):
-        for j in range(result.height):
-            r, g, b = pixels[i, j] 
+    for x in range(result.width):
+        for y in range(result.height):
+            r, g, b = pixels[x, y] 
 
             # change the brightness
             r = int(r * factor)
             g = int(g * factor)
             b = int(b * factor)
 
-            pixels[i, j] = (r, g, b)
+            pixels[x, y] = (r, g, b)
             
     return result
 ```
@@ -302,12 +303,12 @@ def mystery(image1, image2, factor):
     result = image1.copy()
     pixels_result = result.load()
 
-    for i in range(result.width):
-        for j in range(result.height):
-            if i / image1.width < factor:
-                pixels_result[i, j] = pixels2[i, j]
+    for x in range(result.width):
+        for y in range(result.height):
+            if x / image1.width < factor:
+                pixels_result[x, y] = pixels2[x, y]
             else:
-                pixels_result[i, j] = pixels1[i, j]
+                pixels_result[x, y] = pixels1[x, y]
 
     return result
 ```
