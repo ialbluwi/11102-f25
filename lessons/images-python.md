@@ -198,7 +198,7 @@ pixels = image.load()
 for x in range(image.width):
     for y in range(image.height):
         r, g, b = pixels[x, y]
-        gray = int((r + g + b) / 3)  # Calculate the average
+        gray = (r + g + b) // 3  # Calculate the average
         pixels[x, y] = (gray, gray, gray)  # Set to grayscale
 
 image.save('grayscale_image.jpg')
