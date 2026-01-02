@@ -7,6 +7,12 @@ description: >-
 
 # Extra Resources
 
+## Previous Exams
+- **Midterm Exam**: Fall 2025 [[pdf](), [solution]()]
+- **Quiz 1**: Fall 2025 [[pdf](https://drive.google.com/file/d/1E18VkzHBfq5AEK6ZYb095t4eYX8rVEf6/view?usp=sharing), [solution](https://drive.google.com/file/d/1z7PvUPi_RhVb3tBjExySZMxW6zDdRcfc/view?usp=drive_link)]
+- **Quiz 2**: Fall 2025 [[pdf](https://drive.google.com/file/d/1iuwAg2kEzxFnWl1431kyJ7DMh1rxIm17/view?usp=sharing), [solution](https://drive.google.com/file/d/1mkyiZEryPwYhB5kYPSmrV9v0z52LPa4h/view?usp=sharing)]
+- **Final Exam**: Fall 2025
+
 ## Python Exercises
 
 - [practicepython.org](https://www.practicepython.org/)
