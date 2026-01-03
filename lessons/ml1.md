@@ -370,9 +370,9 @@ To improve our model, we need to use **more** and better features of the image (
 
 What features should we consider? And how should we combine them? This is the essence of machine learning, and we will explore these questions in the next parts of this lesson.
 
-<!-- a footnote with small fonts -->
-<br>
-<br>
-<sub><sup>
-** Some digit images used in this lesson are adapted from https://www.cs.princeton.edu/courses/archive/fall25/cos126/assignments/classifier/
-</sup></sub>
+<hr>
+
+<div style="font-size: 0.75em; color: #666; line-height: 1.4;">
+  <strong>Image Credits</strong><br>
+  Some digit images used in this lesson are adapted from: <a href="https://www.cs.princeton.edu/courses/archive/fall25/cos126/assignments/classifier/" target="_blank">Link</a><br>
+</div>

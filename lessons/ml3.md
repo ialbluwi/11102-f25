@@ -340,3 +340,12 @@ Can you imagine how much time, data, and computational power it takes to train s
 The chart above shows how much electrical power (in megawatts) is consumed by training various AI models over the years.
 
 For context, a single megawatt (MW) can power hundreds of homes. Therefore, the **100 Megawatts (MW)** needed to train **Grok3** can supply tens of thousands of residences, depending on local usage patterns.
+
+
+<hr>
+
+<div style="font-size: 0.75em; color: #666; line-height: 1.4;">
+  <strong>Image Credits</strong><br>
+  Neuron image: Adapted from <a href="https://jontysinai.github.io/jekyll/update/2017/11/11/the-perceptron.html" target="_blank">Link</a><br>
+  Judges images: Adapted from <a href="https://www.dreamstime.com/" target="_blank">Link</a>
+</div>
