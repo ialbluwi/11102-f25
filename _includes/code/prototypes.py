@@ -21,5 +21,5 @@ def create_average_image(digit_folder, output_file):
 
 for digit in '0123456789':
     print('Creating average image for digit', digit)
-    create_average_image('Downloads/digits/training/' + digit, 
-                         f'Downloads/average_{digit}.png')
+    create_average_image('digits/training/' + digit, 
+                         f'average_{digit}.png')
