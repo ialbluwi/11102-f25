@@ -79,7 +79,9 @@ We will be using the [MNIST dataset](https://drive.google.com/file/d/1As2Km6JNlw
 
 - **Test set**: $$10,000$$ images of handwritten digits along with their labels. This is the data that we will use to evaluate how well our system performs on unseen data.
 
-Each image in the dataset is a $$28 \times 28$$ pixel grayscale image. The images are organized in folders, where each folder corresponds to a digit $$(0-9)$$. The following screen recording shows the structure of the dataset:
+Each image in the dataset is a $$28 \times 28$$ pixel grayscale image. The background is black (pixel value $$0$$), and the digit is drawn in white (pixel value $$255$$) with varying shades of gray in between.
+
+The images are organized in folders, where each folder corresponds to a digit $$(0-9)$$. The following screen recording shows the structure of the dataset:
 
 <video controls style="display:block; margin: 20px auto; width: 80%">
   <source src="/11102-f25/lessons/images/mnist.mp4" type="video/mp4">
@@ -188,7 +190,7 @@ Running the code again with the dummy `predict` function that always returns `0`
 
 ### A Simple Approach
 
-How can we distinguish between `0`s and `1`s? One simple idea is to look at _how black_ or white the image is. Intuitively, `0`s might have more black pixels than `1`s since `0`s are a closed loop, while `1`s are a straight line.
+How can we distinguish between `0`s and `1`s? One simple idea is to look at _how black_ or white the image is. Intuitively, `0`s might have more white pixels than `1`s since `0`s are a closed loop, while `1`s are a straight line.
 
 Let's begin by writing a function that computes the **average pixel value** of an image.
 
@@ -366,7 +368,7 @@ To improve our model, we need to use **more** and better features of the image (
 
 <img src="/11102-f25/lessons/images/weights.png" style="display:block; margin: 20px auto; width: 80%">
 
-What features should we consider? And how should we combine them? This is the essence of machine learning, and we will explore these questions in the next parts of this lesson series.
+What features should we consider? And how should we combine them? This is the essence of machine learning, and we will explore these questions in the next parts of this lesson.
 
 <!-- a footnote with small fonts -->
 <br>

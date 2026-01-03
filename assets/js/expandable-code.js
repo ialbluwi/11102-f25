@@ -1,17 +1,19 @@
 
-function toggleExpandableCode(codeId, headerEl) {
-    const codeContent = document.getElementById(codeId);
-    const toggleBtn = headerEl.querySelector('.expandable-toggle-btn');
-    const label = toggleBtn.querySelector('.expandable-label');
+function toggleExpandableCode(contentId, headerElement) {
+    const content = document.getElementById(contentId);
+    const btn = headerElement.querySelector('.expandable-toggle-btn');
+    const label = btn.querySelector('.expandable-label');
 
-    if (codeContent.classList.contains('expanded')) {
-        codeContent.classList.remove('expanded');
-        toggleBtn.classList.remove('expanded'); // rotates arrow down
-        if (label) label.textContent = 'Expand';
+    content.classList.toggle('expanded');
+    btn.classList.toggle('expanded');
+
+    if (content.classList.contains('expanded')) {
+        // Set max-height to the exact pixel height of the content
+        content.style.maxHeight = content.scrollHeight + "px";
+        label.innerText = "Collapse";
     } else {
-        codeContent.classList.add('expanded');
-        toggleBtn.classList.add('expanded'); // rotates arrow up
-        if (label) label.textContent = 'Collapse';
+        content.style.maxHeight = "0";
+        label.innerText = "Expand";
     }
 }
 

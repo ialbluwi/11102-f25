@@ -210,6 +210,12 @@ Running the evaluation gives us an accuracy of about **82.03%**. This is a huge 
 
 However, there is still room for improvement.
 
+{: .important-title }
+> DEFINITION
+>
+> The approach we just implemented is called a **Nearest Prototype Classifier**. In such a classifier, each class (digit in our case) is represented by a prototype representing the main properties of that class, and new instances are classified based on their proximity to these prototypes.
+
+
 ### Are All Pixels Positions Equally Important?
 
 In our current model, we treat all pixel positions equally when computing the distance between images. For example, a difference in pixel values in the center of the image affects the computed distance just as much as a difference in pixel values in the corners of the image.
