@@ -58,15 +58,15 @@ In part 1, we saw how to build a simple image classifier. However, the classifie
 
 The main problem with our approach was that we used a single feature (the average pixel value) that completely ignored the spatial distribution of pixels (where dark/white pixels are located). We will now explore ways to improve the classifier's performance.
 
-## Attempt 2
+## Attempt # 2
 
 Here is what we will do to include the location of pixels in our model:
 
-- **Learning Phase**: For each pixel position, use the images in the training set (for a single digit) to compute the average pixel value at that position. This gives us a prototype image for each digit (a 1D list of $$28\times28=784$$ average pixel values).
+- **Learning Phase**: We will use the training set to learn the average pixel value at each pixel position. This gives us a _prototype_ image for each digit (a 1D list of $$28\times28=784$$ average pixel values).
 
 <img src="/11102-f25/lessons/images/attempt2.png" style="display:block; margin: 20px auto; width: 80%">
 
-- **Prediction Phase**: For a new image, compute the difference (distance) between its pixel values and each prototype image. Predict the digit whose prototype image is closest to the new image.
+- **Prediction Phase**: When asked to predict the digit in a new image, we will compute the difference (distance) between the pixel values of the image and each prototype image for the digits $$(0-9)$$. The predicted digit will be the one whose prototype image is closest to the new image (minimum distance).
 
 Using this approach, if a digit tends to have more dark pixels in certain locations, the prototype image will reflect that, and the classifier can use this information to make better predictions.
 
@@ -84,8 +84,8 @@ def get_prototype(folder):
 
     # Loop over each file in the folder
     for filename in os.listdir(folder):
-        image_path = folder + '/' + filename
-        pixels = read_as_1D(image_path)
+        fullname = folder + '/' + filename
+        pixels = read_as_1D(fullname)
 
         # update the sum for every pixel position
         for i in range(len(pixels)):
@@ -101,7 +101,7 @@ def get_prototype(folder):
     return avg_pixels
 ```
 
-Using this function, we can compute the prototype images for all digits (0-9) as follows:
+Using this function, we can compute the prototype images for all digits $$(0-9)$$ as follows:
 
 ```python
 def get_prototypes(training_folder):
@@ -120,6 +120,31 @@ def get_prototypes(training_folder):
 
 The result is a list of $$10$$ prototype images, each represented as a 1D list of $$784$$ average pixel values. In other words, the result is a 2D list of size $$10$$ rows $$\times$$ $$784$$ columns.
 
+```python
+[
+  [avg0, avg1, avg2, ..., avg783], # prototype for digit 0
+  [avg0, avg1, avg2, ..., avg783], # prototype for digit 1
+  [avg0, avg1, avg2, ..., avg783], # prototype for digit 2
+   ..., 
+  [avg0, avg1, avg2, ..., avg783]  # prototype for digit 9
+]
+```
+
+The following is a visualization of the prototype images for all digits:
+
+<img src="/11102-f25/lessons/images/prototypes.png" style="display:block; margin: 20px auto; width: 70%">
+
+The blurry parts in the images represent where the digit is likely to have white pixels. This is exactly what we want!
+
+> _**Note.** We will not work with the prototype images directly. Instead, we will use the 1D lists of average pixel values that represent these images. If you are curious, you can inspect the following code that was used to generate the above visualization._
+
+{% include expandable-code.html
+title="Optional Code"
+id="prototypes"
+language="python"
+file='code/prototypes.py'
+%}
+
 ### Distance Function
 
 To compare a new image to the prototype images, we need a function that computes the distance between two images $$p$$ and $$q$$ (represented as 1D lists of pixel values). A common choice is the Euclidean distance:
@@ -127,6 +152,7 @@ To compare a new image to the prototype images, we need a function that computes
 $$d(p, q) = \sqrt{(p_0 - q_0)^2 + (p_1 - q_1)^2 + ... + (p_{783} - q_{783})^2}$$
 
 ```python
+import math
 def distance(p, q):
     total = 0
     for i in range(len(p)):
@@ -142,13 +168,13 @@ We are now ready to check the performance of our improved classifier on the test
 def predict(image, prototypes):
     pixels = read_as_1D(image)
 
-    min_dist = float('inf')
+    min_dist = None
     result = None
 
     # Compare to each prototype
     for digit in range(10):
         dist = distance(pixels, prototypes[digit])
-        if dist < min_dist:
+        if min_dist == None or dist < min_dist:
             min_dist = dist
             result = str(digit)
 
@@ -190,66 +216,6 @@ In our current model, we treat all pixel positions equally when computing the di
 
 However, intuitively, some pixel positions are more important than others, especially for differentiating between certain digits. This important observation will be the basis for our next attempt to improve the classifier's performance.
 
-## A Simple Improvement
+## Next Steps
 
-Instead of measuring distance we will consider the prototypes as weights and compute a weighted average of the pixel values. This way, important pixel positions (with high weights) will have a larger impact on the final score than unimportant pixel positions (with low weights).
-
-Here is the full implementation for all the functions we need:
-
-```python
-def weighted_avg(pixels, weights):
-    total = 0
-    weight_sum = 0
-    for i in range(len(pixels)):
-        total += pixels[i] * weights[i]
-        weight_sum += weights[i]
-    return total / weight_sum
-
-def get_prototype(folder):
-    sum_pixels = [0] * (28 * 28)
-    count = 0
-
-    # Loop over each file in the folder
-    for filename in os.listdir(folder):
-        image_path = folder + '/' + filename
-        pixels = read_as_1D(image_path)
-
-        # update the sum for every pixel position
-        for i in range(len(pixels)):
-            sum_pixels[i] += pixels[i]
-
-        count += 1
-
-    # compute average at each pixel position
-    avg_pixels = [0] * (28 * 28)
-    for i in range(len(sum_pixels)):
-        avg_pixels[i] = sum_pixels[i] / count
-
-    return avg_pixels
-
-def get_all_weights(training_folder):
-    all_weights = []
-    # Loop over each digit (0-9)
-    for digit in '0123456789':
-        folder = training_folder + '/' + digit
-        print('Creating Weights for digit:', digit)
-        weights = get_prototype(folder)
-        all_weights.append(weights)
-    return all_weights
-
-def predict(pixels, all_weights):
-    result = None
-    max_score = None
-
-    # Loop over each digit's weights
-    for digit in range(10):
-        score = weighted_avg(pixels, all_weights[digit])
-        if max_score is None or score > max_score:
-            max_score = score
-            result = digit
-    return result
-
-all_weights = get_all_weights('digits/training')
-evaluate('digits/testing', all_weights)
-```
-
+In the next lesson, we will explore a method that allows us to assign different importance (weights) to different pixel positions when making predictions. 

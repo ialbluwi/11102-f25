@@ -54,19 +54,19 @@ table td {
 
 ## Overview
  
-This is the first part of the lessons on Machine Learning (ML). The goal of these lessons is to give you an introduction to ML concepts through a hands-on application. Machine learning is a subfield of artificial intelligence (AI) that can be considered as the most important and widely used AI technique today.
+This is the first part of the lessons on Machine Learning (ML). The goal of these lessons is to give you an introduction to ML concepts through a hands-on application. Machine learning is by far the most important subfield of Artificial Intelligence (AI) anyone working in a computing-related domain should learn.
 
 In this part, we will introduce the ML application along with some naive solutions. The goal is to illustrate key ML concepts and pave the way for more advanced solutions in the next parts.
 
 ## The Problem
 
-We are given a dataset of images of handwritten digits (0-9) and are asked to use it to build a system that can take an image of a handwritten digit (0-9) and predict which digit it is.
+We are given a dataset of images of handwritten digits $$(0-9)$$ and are asked to use it to build a system that can take an image of a handwritten digit $$(0-9)$$ and predict which digit it is.
 
 <img src="/11102-f25/lessons/images/digits1.png" style="display:block; margin: 20px auto; width: 80%">
 
-This problem is a classical example of what is called **classification** in ML, where the goal is to assign an input (e.g., an image) to one of several categories (e.g., the digits 0-9). Other examples of classification problems include classifying emails as spam or not spam, classifying product reviews as positive or negative, and classifying medical images as showing signs of a disease or not.
+This problem is a classical example of what is called **classification** in ML, where the goal is to assign an input (e.g., an image) to one of several categories (e.g., the digits $$0-9$$). Other examples of classification problems include classifying emails as spam or not spam, classifying product reviews as positive or negative, and classifying medical images as showing signs of a disease or not.
 
-In a classification problem, we have a dataset of **examples** that are already classified (labeled) that the system can **learn** from.
+In a classification problem, we have a dataset of **examples** that are already classified (labeled), which the system can **learn** from.
 
 <img src="/11102-f25/lessons/images/ml.png" style="display:block; margin: 20px auto; width: 80%">
 
@@ -79,9 +79,7 @@ We will be using the [MNIST dataset](https://drive.google.com/file/d/1As2Km6JNlw
 
 - **Test set**: $$10,000$$ images of handwritten digits along with their labels. This is the data that we will use to evaluate how well our system performs on unseen data.
 
-Each image in the dataset is a $$28 \times 28$$ pixel grayscale image, where each pixel has a value between 0 (black) and 255 (white).
-
-The images are organized in folders, where each folder corresponds to a digit (0-9). The following screen recording shows the structure of the dataset:
+Each image in the dataset is a $$28 \times 28$$ pixel grayscale image. The images are organized in folders, where each folder corresponds to a digit $$(0-9)$$. The following screen recording shows the structure of the dataset:
 
 <video controls style="display:block; margin: 20px auto; width: 80%">
   <source src="/11102-f25/lessons/images/mnist.mp4" type="video/mp4">
@@ -94,11 +92,7 @@ Before we start building our solution, let's define the main functions we will b
 
 **1. `read_as_1D(filename)`**
 
-This function takes the name of an image file as input and returns a list of pixel values representing the image in a flattened 1D format (i.e., a list of $$784$$ values for a $$28 \times 28$$ image). Each pixel value is an integer between $$0$$ and $$255$$.
-
-<img src="/11102-f25/lessons/images/flatten.png" style="display:block; margin: 20px auto; width: 80%">
-
-Here is the implementation of the `read_as_1D` function:
+This function takes the name of an image file as an argument and returns its pixel values as a 1D **list** (i.e., a list of $$28 \times 28 = 784$$ elements). Each pixel value is an integer between $$0$$ and $$255$$.
 
 ```python
 from PIL import Image
@@ -112,6 +106,8 @@ def read_as_1D(filename):
     return list(image.getdata())             
 ```
 
+<img src="/11102-f25/lessons/images/flatten.png" style="display:block; margin: 20px auto; width: 80%">
+
 In many cases, we want to perform operations on all the pixel values of an image regardless of their 2D position (e.g., computing the average pixel value). Having a list of pixel values makes writing the code for such operations easier.
 
 **2. `predict(image)`** 
@@ -120,9 +116,9 @@ This function takes the name of an image file as input and returns the predicted
 
 **3. `evaluate(test_folder)`** 
 
-This function takes the name (or full path) of the folder containing test data and produces an accuracy score indicating how well our `predict` function performs on the given test data. 
+This function takes the name of the folder containing test data and produces an accuracy score indicating how well our `predict` function performs on the given test data. 
 
-Here is the implementation of the `evaluate` function:
+Since the test data is organized into subfolders (one for each digit), the function will need to loop over each subfolder and each image file in that subfolder, send the image to the `predict` function, and compare the predicted label with the actual label (the name of the subfolder).
 
 ```python
 import os
@@ -162,16 +158,14 @@ digits/testing/2
 digits/testing/9
 ``` 
 
-For each folder, the inner loop goes over each image file in that folder and sends it to the `predict` function to get a prediction. 
-
-If the prediction matches the folder name, we increment the `correct` counter.
+For each folder, the inner loop goes over each image file in that folder and sends it to the `predict` function to get a prediction. If the prediction matches the folder name, we increment the `correct` counter.
 
 {: .important-title }
 > A PYTHON NOTE
 >
 > The `os.listdir(folder)` function returns a list of all files and directories in the specified folder. We use it here to loop over all image files in each digit folder.
 
-If we run the above code with the dummy `predict` function that always returns `0`, we will get an accuracy of around 10% since only the images in the `0` folder will be predicted correctly (out of `~10,000` images, only `~1,000` are `0`s).
+If we run the above code with the dummy `predict` function that always returns `0`, we will get an accuracy of around $$10%$$ since only the images in the `0` folder will be predicted correctly (out of `~10,000` images, only `~1,000` are `0`s).
 
 
 ## Attempt # 1
@@ -207,7 +201,9 @@ pixels = read_as_1D('digits/training/1/1.png')
 print('Average:', average(pixels))
 ```
 
-We can apply the above function to each image in the training set to compute the average pixel value for `0`s and `1`s separately. I.e., we want o **learn** the average pixel value for each digit from the training data.
+We can apply the above function to all the `0` images in the training set to compute the average pixel value for the digit `0`, and do the same with all the `1` images to get the average for `1`. 
+
+In other words, we want to **learn** the average pixel value for each digit **from the training data**.
 
 ```python
 def learn_average(digit_folder):
@@ -238,9 +234,12 @@ Average for 0: 44.21682790539817
 Average for 1: 19.379653852789957
 ```
 
-This confirms our intuition that `0`s tend to have more black pixels (lower average pixel value) than `1`s. Let's use this information to build our `predict` function:
+This confirms our intuition that `0`s tend to have more white pixels (higher average pixel value) than `1`s. 
+
+Let's use this information to build our `predict` function:
 
 ```python
+# Predict if the image is a 0 or a 1
 def predict(image):
     AVERAGES = [44.21682790539817,    # learned average for '0'
                 19.379653852789957]   # learned average for '1'
@@ -263,11 +262,11 @@ Let's evaluate our `predict` function on the simplified test set containing only
 Accuracy:  92.72%
 ```
 
-This is huge! We managed to achieve over 90% accuracy using a very simple approach! 🎉🎉
+This is huge! We managed to achieve over $$90\%$$ accuracy simply by comparing average pixel values! 🎉🎉
 
 ### Generalizing to All Digits
 
-Let's apply the same approach for the full problem (digits `0-9`) by learning the average pixel value for each digit:
+Let's apply the same approach for the full problem (digits $$0-9$$) by learning the average pixel value for each digit:
 
 ```python
 print('Digit\t Average')
@@ -340,17 +339,15 @@ We should have been less optimistic about this simple approach. But why?
 
 While it worked well for distinguishing between `0`s and `1`s, the average pixel value fails to capture the complexity of the other digits. For example, digits like `2`, `3`, and `5` have similar average pixel values.
 
-One problem in our approach is that we completely ignore where pixels are. Two images can have the same average pixel value but look completely different. 
-
-We need a better way to represent images that captures more information about the pixel values and their locations.
+One problem in our approach is that we completely ignore where pixels are. Two images can have the same average pixel value but look completely different. We need to capture and use more information about the images to improve our predictions.
 
 ## A Closer Look at Our Approach
 
 ### Architecture
 
-Our approach can be split into two phases:
+Our approach in Attempt # 1 can be split into two phases:
 
-- **Training phase**: In this phase, we learned from the training data by computing the average pixel value for each digit (0-9). The result of this phase is a set of learned averages that we used for prediction. We will refer to these learned averages as our **model**.
+- **Training phase**: In this phase, we learned from the training data by computing the average pixel value for each digit $$(0-9)$$. The result of this phase is a set of learned averages that we used for prediction. We will refer to these learned averages as our **model**.
 
 <img src="/11102-f25/lessons/images/training.png" style="display:block; margin: 20px auto; width: 80%">
 
@@ -365,7 +362,7 @@ The problem with our approach is that the model we learned is too simplistic:
 - First, it only captures a single **feature** of the image: the average pixel value.
 - Second, it bases its predictions on a very simple rule: choosing the digit whose average pixel value is closest to that of the input image.
 
-To improve our model, we might need to consider **more** (or better) features of the image, and use **a more sophisticated method** to combine these features to make predictions.
+To improve our model, we need to use **more** and better features of the image (instead of the single value we are currently using), and use **a more sophisticated method** to combine these features to make predictions.
 
 <img src="/11102-f25/lessons/images/weights.png" style="display:block; margin: 20px auto; width: 80%">
 
