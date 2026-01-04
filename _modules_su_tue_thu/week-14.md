@@ -1,19 +1,15 @@
 ---
-title: <b>Week 14</b> (AI)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
+title: <b>Week 14</b> (AI & Data Science)
 ---
 
 Jan 4
-: Text Classification (<i>problem decomposition</i>)
-    : Slides
+: Machine Learning
+    : [Part 1](/11102-f25/lessons/ml1)
 
 Jan 6
-: Text Classification (<i>implementation</i>)
-    : Code
+: Machine Learning
+    : [Part 2](/11102-f25/lessons/ml1)
 
 Jan 8
-: A Machine Learning Premier
-    : Slides
-
-HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: Machine Learning
+    : [Part 3](/11102-f25/lessons/ml1)

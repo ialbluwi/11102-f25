@@ -1,15 +1,12 @@
 ---
-title: <b>Week 14</b> (AI)
-note: "⚠️ Note: Schedule below not yet updated for this semester"
+title: <b>Week 14</b> (AI & Data Science)
 ---
 
 Jan 5
-: TBA
-  : TBA
+: Machine Learning
+    : [Part 1](/11102-f25/lessons/ml1)
 
 Jan 7
-: TBA
-  : TBA
-
-HW
-: [**Exercises**{:.label .label-purple }](#) [**Self-Assessment**{:.label .label-green }](#)
+: Machine Learning
+    : [Part 2](/11102-f25/lessons/ml2)<br>
+      [Part 3](/11102-f25/lessons/ml3)
