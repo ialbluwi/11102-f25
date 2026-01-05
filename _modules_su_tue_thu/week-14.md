@@ -8,8 +8,8 @@ Jan 4
 
 Jan 6
 : Machine Learning
-    : [Part 2](/11102-f25/lessons/ml1)
+    : [Part 2](/11102-f25/lessons/ml2)
 
 Jan 8
 : Machine Learning
-    : [Part 3](/11102-f25/lessons/ml1)
+    : [Part 3](/11102-f25/lessons/ml3)
