@@ -341,6 +341,33 @@ The chart above shows how much electrical power (in megawatts) is consumed by tr
 
 For context, a single megawatt (MW) can power hundreds of homes. Therefore, the **100 Megawatts (MW)** needed to train **Grok3** can supply tens of thousands of residences, depending on local usage patterns.
 
+## Working in Machine Learning
+
+By now, you should have a basic understanding of what it takes to build a machine learning system. If you work as a data scientist or machine learning engineer, you will often find yourself doing one or all of the following tasks:
+
+- **Data Preparation**.<br>
+  Collecting, cleaning, and organizing data to be used for training and testing machine learning models. The data we used in this lesson was already prepared for us, but in real-world scenarios, this step can be time-consuming and complex.
+
+- **Model Development, Training, and Evaluation**.<br>
+  Designing and implementing machine learning models (like the perceptron) to solve specific problems. This involves extracting features from data, selecting and adapting appropriate algorithms, tuning parameters, assessing performance, and iterating to improve results.
+
+- **Deployment**.<br>
+    Integrating trained models into applications or systems for real-world use.
+
+
+## Optional Reading: QuickDraw
+
+Creating good datasets for training machine learning models can be challenging. One interesting approach to collecting large datasets is through games.
+
+QuickDraw is an online game developed by Google that collects doodles drawn by users worldwide. Players are prompted to draw a specific object (e.g., "cat", "house", "car") within a time limit. The game uses machine learning to guess what the player is drawing based on the doodle.
+
+<p style="text-align:center; margin: 40px 0;">
+  <a href="https://quickdraw.withgoogle.com/data" target="_blank">
+    <strong>Check the dataset collected from QuickDraw here → </strong>
+  </a><br>
+</p>
+
+You can contribute to the dataset by **playing** the game or help **clean the data**. If you spot a drawing that is incorrectly classified, you can click on it to report the issue. This will help improve machine learning models that rely on this data!
 
 <hr>
 
