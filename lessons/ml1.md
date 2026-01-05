@@ -54,11 +54,24 @@ table td {
 
 ## Overview
  
-This is the first part of the lessons on Machine Learning (ML). The goal of these lessons is to give you an introduction to ML concepts through a hands-on application. Machine learning is by far the most important subfield of Artificial Intelligence (AI) anyone working in a computing-related domain should learn.
+This is the first of 3 parts on Machine Learning (ML). The goal of these lessons is to give you an introduction to ML concepts through a hands-on application. In this part, we will introduce the ML application along with some naive solutions. The goal is to illustrate key ML concepts and pave the way for more advanced solutions in the next parts.
 
-In this part, we will introduce the ML application along with some naive solutions. The goal is to illustrate key ML concepts and pave the way for more advanced solutions in the next parts.
+## Machine Learning
 
-## The Problem
+Machine learning is currently the hottest subfield of Artificial Intelligence (AI). Anyone working in AI today is likely to be working on machine learning.
+
+At a high level, machine learning is about building computer systems that can **learn** from data to make predictions or decisions.
+
+{: .important-title }
+> DEFINITION
+>
+> **Learning** is the process of improving the performance on a task based on experience.
+
+A player is said to be _learning_ how to play chess if their performance in playing chess improves over time with practice (experience). A child is said to be _learning_ to recognize animals if their ability to identify different animals improves as they are exposed to more animals.
+
+In the context of machine learning, the experience usually comes in the form of a **dataset** of examples that the system can learn from. For instance, a system that recognizes human faces can learn from a dataset of images of human faces, and a system that predicts stock prices can learn from a dataset of historical stock prices.
+
+## Problem Overview
 
 We are given a dataset of images of handwritten digits $$(0-9)$$ and are asked to use it to build a system that can take an image of a handwritten digit $$(0-9)$$ and predict which digit it is.
 
@@ -167,7 +180,29 @@ For each folder, the inner loop goes over each image file in that folder and sen
 >
 > The `os.listdir(folder)` function returns a list of all files and directories in the specified folder. We use it here to loop over all image files in each digit folder.
 
-If we run the above code with the dummy `predict` function that always returns `0`, we will get an accuracy of around $$10%$$ since only the images in the `0` folder will be predicted correctly (out of `~10,000` images, only `~1,000` are `0`s).
+Here is how the files are visited by the above code:
+```
+folder: digits/testing/0
+            fullname: digits/testing/0/1.png
+            fullname: digits/testing/0/2.png
+            fullname: digits/testing/0/3.png
+            ...
+folder: digits/testing/1
+            fullname: digits/testing/1/1.png
+            fullname: digits/testing/1/2.png
+            fullname: digits/testing/1/3.png
+            ...
+...
+folder: digits/testing/9
+            fullname: digits/testing/9/1.png
+            fullname: digits/testing/9/2.png
+            fullname: digits/testing/9/3.png
+            ...
+``` 
+
+### Baseline Performance
+
+If we run the above code with the dummy `predict` function that always returns `0`, we will get an accuracy of around **10%** since only the images in the `0` folder will be predicted correctly (out of $$10,000$$ images, only around $$1,000$$ are `0`s).
 
 
 ## Attempt # 1
@@ -186,7 +221,7 @@ Instead of:
 for digit in '0123456789':
 ```
 
-Running the code again with the dummy `predict` function that always returns `0` will now give us an accuracy of around $$50\%$$ since half of the images in the test set are `0`s and the other half are `1`s.
+Running the code again with the dummy `predict` function that always returns `0` will now give us an accuracy of around $$46\%$$ since half of the images in the test set are `0`s and the other half are `1`s.
 
 ### A Simple Approach
 
