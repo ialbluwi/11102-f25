@@ -36,6 +36,7 @@ def load_dataset(root_folder):
     dataset = []
     for digit in range(10):
         folder = root_folder + '/' + str(digit)
+        print("Loading from", folder, "...")
         for filename in os.listdir(folder):
             image_path = folder + '/' + filename
             pixels = read_as_1D(image_path)
@@ -45,6 +46,7 @@ def load_dataset(root_folder):
 
 # -----------------------------
 # Learn all weights together (multiclass perceptron)
+# The function prints out a percentage of completion for every epoch.
 # -----------------------------
 def get_all_weights(dataset):
     # Initialize weights for 10 digits (+1 for bias)
@@ -60,7 +62,10 @@ def get_all_weights(dataset):
         print("Epoch", epoch + 1)
         random.shuffle(dataset)
 
-        for pixels, true_digit in dataset:
+        print("Progress: 0%", end='\r')
+        for i, (pixels, true_digit) in enumerate(dataset):
+            if i % (len(dataset) // 20) == 0:
+                print(f"Progress: {i / len(dataset) * 100:.0f}%", end='\r')
 
             # Compute scores for all digits
             scores = []
@@ -86,6 +91,8 @@ def get_all_weights(dataset):
                 for i in range(len(pixels)):
                     weights[predicted_digit][i] -= pixels[i]
                 weights[predicted_digit][-1] -= 1  # bias update
+
+        print("Progress: 100%")
 
     return weights
 
@@ -129,6 +136,11 @@ def evaluate(test_folder, all_weights):
 # -----------------------------
 # Main
 # -----------------------------
-training_data = load_dataset('digits/training')
+
+print("---- LOADING TRAINING DATA ----")
+training_data = load_dataset('Downloads/digits/training')
+print("---- LEARNING WEIGHTS ----")
 all_weights = get_all_weights(training_data)
-evaluate('digits/testing', all_weights)
+print("---- EVALUATING ----")
+evaluate('Downloads/digits/testing', all_weights)
+                
