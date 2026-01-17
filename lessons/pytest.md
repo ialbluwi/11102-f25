@@ -214,7 +214,7 @@ from hello import hello
 
 def test_hello():
     assert hello("David") == "hello, David"
-    assert hello() == "hello, world"
+    assert hello("world") == "hello, world"
 ```  
     
 Looking at this code, do you think that this approach to testing will work well? Why might this test not work well? Notice that the `hello` function in `hello.py` prints something: That is, it does not _return_ a value!
@@ -223,7 +223,7 @@ We can change our `hello` function within `hello.py` as follows:
 
 ```python 
 def hello(to):
-    return f"hello, {to}"
+    return "hello, " + to
 
 if __name__ == "__main__":
     name = input("What's your name? ")

@@ -303,7 +303,7 @@ file='code/perceptron.py'
 
 Using the above perceptron implementation, we achieve a test accuracy of about: 
 
-$$88\%$$
+$$88.75\%$$
 
 This is a significant improvement over our previous nearest prototype classifier (about $$82\%$$ accuracy).
 

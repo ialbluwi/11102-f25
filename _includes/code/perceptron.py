@@ -59,13 +59,12 @@ def get_all_weights(dataset):
 
     # Run multiple passes over data
     for epoch in range(5):
-        print("Epoch", epoch + 1)
         random.shuffle(dataset)
 
-        print("Progress: 0%", end='\r')
+        print(f"Epoch {epoch + 1} (Progress: 0%)", end='\r')
         for i, (pixels, true_digit) in enumerate(dataset):
             if i % (len(dataset) // 20) == 0:
-                print(f"Progress: {i / len(dataset) * 100:.0f}%", end='\r')
+                print(f"Epoch {epoch + 1} (Progress: {i / len(dataset) * 100:.0f}%)", end='\r')
 
             # Compute scores for all digits
             scores = []
@@ -92,7 +91,7 @@ def get_all_weights(dataset):
                     weights[predicted_digit][i] -= pixels[i]
                 weights[predicted_digit][-1] -= 1  # bias update
 
-        print("Progress: 100%")
+        print("Epoch", epoch + 1, "completed.               ")
 
     return weights
 
@@ -124,6 +123,7 @@ def evaluate(test_folder, all_weights):
 
     for digit in '0123456789':
         folder = test_folder + '/' + digit
+        print("Evaluating digit", digit, "...")
         for file in os.listdir(folder):
             fullname = folder + '/' + file
             count += 1
