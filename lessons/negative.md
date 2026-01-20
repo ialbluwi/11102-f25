@@ -207,7 +207,7 @@ When adding two's complement numbers, you can use the same binary addition rules
  3 in two's complement:  00011
 -5 in two's complement:  11011 +
                          -----
-      (discard carry) 1  11110  (which is -2 in decimal)
+                         11110  (which is -2 in decimal)
 ```
 
 This shows that two's complement representation allows for straightforward binary addition, even with negative numbers.

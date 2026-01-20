@@ -322,8 +322,8 @@ Alice wants to send a message to Bob. She does not care about confidentiality, b
 
 Alice can encrypt (sign) the message with her **private** key. Anyone who receives the message can decrypt (verify) it using Alice's **public** key. If the decryption is successful, Bob can be sure that the message was indeed sent by Alice (since only Alice has her private key) and that it has not been altered (since any change to the message would result in a failed decryption).
 
->{: .warning-title }
-> ⚠️ **Important Note**
+{: .warning-title }
+> ⚠️ **NOTE**
 >
 > The above discussion is a simplified explanation to illustrate the basic concepts. In practice, integrity is not achieved by simply encrypting with the private key. Instead, techniques like digital signatures and hash functions are used to ensure message integrity and authenticity.
 
@@ -340,8 +340,8 @@ When Bob receives the message, he can do the following:
 
 This way, Bob can be sure that the message is confidential (only he can read it) and that it is authentic (it was sent by Alice and has not been altered).
 
->{: .warning-title }
-> ⚠️ **Important Note**
+{: .warning-title }
+> ⚠️ **NOTE**
 >
 > Again, the above is an oversimplified explanation to illustrate the basic concepts.
 
