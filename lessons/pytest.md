@@ -155,7 +155,7 @@ In the terminal window, type:
 pytest test_calculator.py
 ``` 
 
-Pytest will run every function in `test_calculator.py` that starts with `test_` or ends with `_test`. You’ll immediately notice that output will be provided. 
+Pytest will run every function in `test_calculator.py` that starts with `test` (any function that does not start with `test` will be ignored by `pytest`). You’ll immediately notice that output will be provided.  
 
 <img src="/11102-f25/lessons/images/pytest1.png" class="img-soft" style="display:block; margin: 20px auto;">
 
